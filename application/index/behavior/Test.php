@@ -6,19 +6,8 @@ use think\facade\View;
 class Test 
 {
     public function run($params) {
-        $v = config('template.view_base');
-        $v = str_replace("view", "view", $v);
-//        config('template.view_base', $v);
-//        echo config('template.view_base')."{$v}<br />";
-        
-//        $view_path = env('app_path') . request() -> module() . '/view/';
-//        if(request() -> isMobile() !== true){
-//            $view_path .= 'default/';
-//        }else{
-//            $view_path .= 'mobile/';
-//        }
-//        echo $view_path;
-        
-        View :: config('view_base', $v);
+        $view_base = config('template.view_base');
+        $view_base = str_replace("__THEME_NAME__", "views", $view_base); //替换主题名称
+        View :: config('view_base', $view_base);//完成配置修改
     }
 }
