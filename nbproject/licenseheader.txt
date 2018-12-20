@@ -1,0 +1,13 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+ +----------------------------------------------------------------------
+ | SunkenFish [ LISTEN TO THE SHOCKING THUNDERCLAP IN THE QUIET AND NOISELESS PLACE]
+ +----------------------------------------------------------------------
+ | Copyright (c) 2016-${date?date?string("yyyy")} http://www.fakeruhe.com All rights reserved.
+ +----------------------------------------------------------------------
+ | Author: 黑鱼� <feiyufly001@gmail.com>
+ +----------------------------------------------------------------------
+<#if licenseLast??>
+${licenseLast}
+</#if>

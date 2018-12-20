@@ -6,7 +6,7 @@ use think\Controller;
 class Index extends Controller {
 
     public function index() {
-       
+       /*
 //        添加一条数据
 //        第一种是实例化模型对象后赋值并保存：
         $admin=new \app\common\model\admin\Admin();
@@ -22,16 +22,18 @@ class Index extends Controller {
 //        或者直接在实例化的时候传入数据
          $db=new \app\common\model\admin\Admin(['user_name'=>'直接实例化传值','pwd'=>'pwd','addtime'=> time()]);
          $db->save();
-         
+         */
         /**
          * 数据查询
          */
-        $rs=$admin->getlist();        
-        foreach ($rs as $v) {     
-            echo "{$v['id']}-{$v['user_name']}-{$v['addtime']}<br />";
-        }
+        $admin=new \app\common\model\admin\Admin();
+        $rs=$admin->getlist();      
+        
+//        foreach ($rs as $v) {     
+//            echo "{$v['id']}-{$v['user_name']}-{$v['addtime']}<br />";
+//        }   
 
-//        var_dump($rs);
+        var_dump($rs);
 //          $data['id']=21;
 //        $data['title'] = "whesssre";
 //        $db->data($data, true);
@@ -45,6 +47,16 @@ class Index extends Controller {
     public function hello($name = 'ThinkPHP5') {
 //           return $this->fetch();
         return 'hello,你好' . $name;
+    }
+    
+    public function test() {
+   
+        \think\facade\Cache::clear();
+        return $this->fetch();
+    }
+
+    public function _empty($name) {
+        return 'hello:' . $name;
     }
 
 }
