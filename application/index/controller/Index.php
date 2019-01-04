@@ -6,7 +6,18 @@ use think\Controller;
 class Index extends Base {
 
     public function index() {
-       /*
+        if ($this->request->isPost()) {
+            $data = input('post.');
+            if (!empty($data['user_name'])) {
+                $admin = new \app\common\model\admin\Admin();
+                $data['addtime'] = time();
+                $admin->save($data);
+                $this->success("数据添加成功");
+            }else{
+                $this->error("用户名不能为空","index");
+            }
+        }
+        /*
 //        添加一条数据
 //        第一种是实例化模型对象后赋值并保存：
         $admin=new \app\common\model\admin\Admin();
@@ -23,15 +34,15 @@ class Index extends Base {
          $db=new \app\common\model\admin\Admin(['user_name'=>'直接实例化传值','pwd'=>'pwd','addtime'=> time()]);
          $db->save();
          */
+        
         /**
          * 数据查询
          */
-        $admin=new \app\common\model\admin\Admin();
-        $rs=$admin->getlist();      
-        
-//        foreach ($rs as $v) {     
-//            echo "{$v['id']}-{$v['user_name']}-{$v['addtime']}<br />";
-//        }   
+        $admin = new \app\common\model\admin\Admin();
+        $rs = $admin->getlist();
+        $this->assign("list", $rs);
+
+
 
 //        var_dump($rs);
 //          $data['id']=21;

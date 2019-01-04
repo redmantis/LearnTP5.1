@@ -17,6 +17,8 @@ Route::get('index/hello/:name', 'index/hello');
 
 Route::get('index/test', 'index/test');
 
+Route::get('index/index', 'index/index');
+
 Route::get('index/:name', 'index/_empty');
 
 return [

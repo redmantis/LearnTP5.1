@@ -14,5 +14,19 @@
 
 body{
     font: 16px;
-    color: red;
+    color: #333;
+}
+
+.formpanel{
+    width: 400px;
+    padding: 20px;
+    border: solid 1px #666;
+}
+
+.formpanel div{    
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: solid 1px #666;
+    padding: 10px;
 }

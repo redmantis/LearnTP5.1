@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+ +----------------------------------------------------------------------
+ | SunkenFish [ LISTEN TO THE SHOCKING THUNDERCLAP IN THE QUIET AND NOISELESS PLACE]
+ +----------------------------------------------------------------------
+ | Copyright (c) 2016-2019 http://www.fakeruhe.com All rights reserved.
+ +----------------------------------------------------------------------
+ | Author: 黑鱼� <feiyufly001@gmail.com>
+ +----------------------------------------------------------------------
+-->
+<html>
+    <head>
+        <title>第四天，简单写入数据及皮肤目录结构的组织</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="{$theme}/css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <h3>第四天，简单写入数据及皮肤目录结构的组织</h3>
+        <div>
+            第二天，我们已经完成了站点皮肤的动态切换实验，今天，再补充一下皮肤目录组织的具体方案。
+            皮肤目录组织基本上遵循以下原则：
+            <ol>
+                <li>1、不要将所有文件都存放在根目录下</li>
+                <li>2、目录层次不要太深，建议不要超过三层</li>
+                <li>3、不要使用过长的目录名和尽量不要使用中文目录名</li>
+                <li>4、应充分考虑后期维护调整的灵活性（如目录的移动、改名等）</li>
+            </ol>
+            在上一章中，我们通过动态调整 全局的视图根目录（view_base）动态切换皮肤时是存在缺陷的（不但目录层次更深，还会造成一些不必要的干扰），
+            更好的做法是调整模板路径（view_path），不但目录层次减少，还增加了更多的灵活性。
+        </div>
+        
+        <h3>这里是读取的数据列表，在模板上输出数据就是这么简单！</h3>
+        <ul> 
+            {foreach $list as $key=>$vo } 
+            <li>{$vo.id}:{$vo.user_name}</li>
+            {/foreach}
+        </ul>
+        <div class="formpanel">
+             <h3>这里提交数据后，会在列表中显示！</h3>
+        <form method="POST">
+            <div><input type="text" name="user_name" value="" placeholder="用户名" /></div>
+            <div><input type="password" name="pwd" value="" placeholder="密码" /></div>
+            <div>状态：<input type="radio" name="status" value="1" checked="checked" id='staus1' /><label for='staus1'>是</label>
+                <input type="radio" name="status" value="0" id='staus0' /><label for='staus0'>否</label>
+            </div>
+            <div><input type="submit" value="提交数据" /></div>
+        </form>
+            </div>
+    </body>
+</html>
