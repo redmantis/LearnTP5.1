@@ -8,7 +8,7 @@ return [
     // 模板路径   
 //     'view_path'    => Env::get('ROOT_PATH').'template'.DS.'views'.DS,
     // 视图分离，定义全局的视图根目录，然后模块作为子目录
-    'view_base' => Env::get('ROOT_PATH') . 'public' . DS . 'template' . DS . '__THEME_NAME__' . DS,
+    'view_base' => Env::get('ROOT_PATH') . 'public' . DS . '__MODULAR_NAME__' . DS . '__THEME_NAME__' . DS,
     // 模板后缀
     'view_suffix'  => 'html',
     // 模板文件名分隔符
@@ -23,6 +23,6 @@ return [
     'taglib_end'   => '}',
     
     'tpl_replace_string' => [
-        '__STATICS__' => '/template/views/static',
+        '__PUBLIC__' => '/template/static',
     ]
 ];
