@@ -3,7 +3,7 @@ namespace app\index\controller;
 
 use think\Controller;
 
-class Index extends Controller {
+class Index extends Base {
 
     public function index() {
        /*
@@ -33,15 +33,15 @@ class Index extends Controller {
 //            echo "{$v['id']}-{$v['user_name']}-{$v['addtime']}<br />";
 //        }   
 
-        var_dump($rs);
+//        var_dump($rs);
 //          $data['id']=21;
 //        $data['title'] = "whesssre";
 //        $db->data($data, true);
 //        $db->save();
 //        $r = $db->update($data);
 //        var_dump($r);
-        return;
-//        return $this->fetch();
+//        return;       
+        return $this->fetch();
     }
 
     public function hello($name = 'ThinkPHP5') {
