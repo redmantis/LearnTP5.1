@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+  <title>网</title> 
+  <link rel="stylesheet" href="__STATICS__/index.css" /> 
+  <link rel="stylesheet" href="__STATICS__/shcustom.css" onerror="tracker.resErr(this)" /> 
+ </head> 
+ <body class="homepage"> 
+  <header style="padding-top: 0px;"> 
+   <div class="tool-bar-ctn">
+    <div class="toolbar"> 
+     <div class="toolbar-link">
+      <a href="http://shanghai.baixing.com/" class="hot-link">上海</a> 
+      <a href="http://www.baixing.com/?changeLocation=yes&amp;return=%2F">[切换城市]</a> 
+      <i class="sep">|</i>
+      <a href="http://kunshan.baixing.com/">昆山</a> 
+      <a href="http://taicang.baixing.com/">太仓</a> 
+      <a href="http://suzhou.baixing.com/">苏州</a> 
+      <a href="http://china.baixing.com/">全国</a> 
+      <i class="sep">|</i> 
+      <div class="dropdown wechat">
+       <a rel="dialog" href="http://shanghai.baixing.com/#promote-weixin-modal" data-toggle="modal">微信版</a>
+       <div class="dropdown-block">
+        <div class="one-block">
+         <p class="dropdown-title">百姓网公众号</p>
+         <p class="dropdown-describe">微信扫码关注</p>
+         <div style="background-image:url(//file.baixing.net/201703/web-wechat-gongzhong.png)" class="dropdown-img"></div>
+        </div>
+        <div class="one-block">
+         <p class="dropdown-title">百姓网小程序</p>
+         <p class="dropdown-describe">微信扫扫立即体验</p>
+         <div style="background-image:url(//file.baixing.net/201704/00be0ff24dd59e5112861c45b2588344.png)" class="dropdown-img"></div>
+        </div>
+       </div>
+      </div>
+      <div class="dropdown mobile">
+       <a href="http://www.baixing.com/a/mobile">手机APP</a>
+       <div class="dropdown-block">
+        <div class="one-block">
+         <p class="dropdown-title">扫码下载手机客户端</p>
+         <p class="dropdown-describe">免费抢油卡、红包、电影票</p>
+         <div style="background-image:url(//file.baixing.net/201704/a88a264ef15d4f728f389a8c9b879ba6.png)" class="dropdown-img"></div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <ul id="user-tools" class="navbar-nav">
+      <li><a href="http://www.baixing.com/oz/login" rel="nofollow" data-toggle="userAuth" data-type="login" class="no-padding">登录</a>/<a href="http://www.baixing.com/oz/verify/reg" rel="nofollow" data-toggle="userAuth" data-type="reg" class="no-padding">注册</a></li>
+      <li><a href="http://www.baixing.com/w/posts" rel="nofollow" data-toggle="userAuth" target="_blank">个人中心</a></li>
+      <li style="display:none" class="js-separator"></li>
+      <li class="dropdown"><a href="http://www.baixing.com/a/pro/?src=topmenu" target="_blank">商户推广<i class="icon-arrow-down"></i></a>
+       <ul class="dropdown-menu">
+        <li><a href="http://www.baixing.com/ra/pay/?src=topmenu" target="_blank">付费推广</a></li>
+        <li><a href="http://www.baixing.com/a/bdad/?src=topmenu" target="_blank">网络品牌推广</a></li>
+        <li><a href="http://vip.baixing.com/job_buy?src=topmenu" target="_blank">VIP会员-招聘版</a></li>
+        <li><a href="http://vip.baixing.com/auto_buy?src=topmenu" target="_blank">VIP会员-车商版</a></li>
+        <li><a href="http://vip.baixing.com/commercialcar_buy?src=topmenu" target="_blank">VIP会员-商用车版</a></li>
+        <li><a href="http://vip.baixing.com/house_buy?src=topmenu" target="_blank">VIP会员-房产版</a></li>
+        <li><a href="http://vip.baixing.com/service_buy?src=topmenu" target="_blank">VIP会员-服务版</a></li>
+        <li><a href="http://vip.baixing.com/pet_buy?src=topmenu" target="_blank">VIP会员-宠物版</a></li>
+        <li><a href="http://vip.baixing.com/second_buy?src=topmenu" target="_blank">VIP会员-二手版</a></li>
+       </ul></li>
+      <li><a href="javascript:;" data-channel="mall-b-menu" class="sign J_signBtn">签到</a></li>
+      <li><a href="http://www.baixing.com/help/" target="_blank">帮助</a></li>
+     </ul>
+    </div>
+   </div> 
+   <div class="header">
+    <div class="top-banner full-banner"></div>
+    <div class="location"> 
+     <span class="breadcrumb">
+         <a href="http://shanghai.baixing.com/" property="v:title" rel="v:url" class="primary-logo">
+             <img alt="百姓网" src="__STATICS__/4916aa54f4b4c69b4c01591fe6a87046.png" width="107px" height="73px" />
+         </a>     
+     </span>     
+     <div class="head-search">
+      <form action="http://shanghai.baixing.com/search/" class="search">
+       <input onfocus="this.select();return false;" placeholder="求职找房找服务" value="" x-webkit-speech="" name="query" class="input search-query ui-autocomplete-input" autocomplete="off" />
+       <button type="submit" title="搜索" class="frontpage-search-trigger search-trigger">搜索</button>
+      </form>
+      <div class="newline">
+       <a href="http://shanghai.baixing.com/search/?query=%E5%85%BC%E8%81%8C%E6%97%A5%E7%BB%93&amp;src=home-search">兼职日结</a>
+       <a href="http://shanghai.baixing.com/search/?query=%E7%85%A4%E6%B0%94%E7%81%B6%E7%BB%B4%E4%BF%AE&amp;src=home-search">煤气灶维修</a>
+       <a href="http://shanghai.baixing.com/search/?query=%E6%96%B0%E6%B0%91%E6%99%9A%E6%8A%A5&amp;src=home-search">新民晚报</a>
+       <a href="http://shanghai.baixing.com/search/?query=%E5%81%9A%E4%B8%80%E4%BC%91%E4%B8%80&amp;src=home-search">做一休一</a>
+       <a href="http://shanghai.baixing.com/search/?query=%E6%97%A5%E7%BB%93%E5%85%BC%E8%81%8C&amp;src=home-search">日结兼职</a>
+       <a href="http://shanghai.baixing.com/search/?query=%E6%8B%9B%E8%81%98&amp;src=home-search">招聘</a>
+       <a href="http://shanghai.baixing.com/search/?query=a2%E9%A9%BE%E9%A9%B6%E5%91%98&amp;src=home-search">a2驾驶员</a>
+       <a href="http://shanghai.baixing.com/search/?query=%E5%AE%B6%E6%95%99&amp;src=home-search">家教</a>
+       <a href="http://shanghai.baixing.com/search/?query=%E7%A9%BA%E8%B0%83&amp;src=home-search">空调</a>
+       <a href="http://shanghai.baixing.com/search/?query=%E7%84%8A%E5%B7%A5&amp;src=home-search">焊工</a>
+       <a href="http://shanghai.baixing.com/search/?query=%E6%94%B6%E9%93%B6%E5%91%98&amp;src=home-search">收银员</a>
+       <a href="http://shanghai.baixing.com/search/?query=%E7%94%B7%E6%A8%A1&amp;src=home-search">男模</a>
+      </div>
+     </div>
+     <a href="http://shanghai.baixing.com/fabu/" rel="nofollow" class="fixed-header-post">免费发布信息</a>
+     <div class="pull-right">
+      <a href="http://shanghai.baixing.com/fabu/" rel="nofollow" class="post">免费发布信息</a>
+      <a id="manage" href="http://www.baixing.com/w/posts?src=topbar-modify-delete" data-toggle="userAuth" data-type="user" rel="nofollow">修改/删除信息</a>
+     </div>
+    </div>
+   </div>
+  </header> 
+  <section class="nav-tabs"> 
+   <ul class="nav-content clearfix">
+    <li class="nav-item home"><a href="http://shanghai.baixing.com/" target="_blank">首页</a></li>
+    <li class="nav-item has-content"><a href="http://www.baixing.com/a/mobile?src=navbar" data-param="src=navbar" target="_blank">百姓APP</a><i class="baicons icon-arrow-down-3"></i>
+     <div class="hover-content qrcode ">
+      <img src="__STATICS__/img_qcode_app.png" />
+      <div class="title">
+       百姓APP
+      </div>
+      <div class="sub-title">
+       扫码安装
+       <br />百姓客户端
+      </div>
+     </div></li>
+    <li class="nav-item has-content no-click"><span>百姓公众号</span><i class="baicons icon-arrow-down-3"></i>
+     <div class="hover-content qrcode ">
+      <img src="__STATICS__/img_qcode_wx.png" />
+      <div class="title">
+       百姓公众号
+      </div>
+      <div class="sub-title">
+       扫码关注
+       <br />百姓微信公众号
+      </div>
+     </div></li>
+    <li class="nav-item normal"><a href="http://www.baixing.com/a/quanwangtong?src=navbar" data-param="src=navbar" target="_blank">全网通</a></li>
+    <li class="nav-item normal"><a href="http://guang.baixing.com/?src=navbar" data-param="src=navbar" target="_blank">百姓逛逛</a></li>
+    <li class="nav-item normal hot new"><a href="http://mini.baixing.com/?src=navbar" data-param="src=navbar" target="_blank">百姓网小程序</a></li>
+    <li class="nav-item normal hot"><a href="http://www.baixing.com/a/pro/?src=navbar" data-param="src=navbar" target="_blank">我要推广</a></li>
+    <li class="nav-item hot has-content"><a href="http://www.baixing.com/a/vip?src=navbar&amp;src=navbar" data-param="src=navbar" target="_blank">VIP会员</a><i class="baicons icon-arrow-down-3"></i>
+     <div class="hover-content list">
+      <a href="http://vip.baixing.com/job_buy?src=navbar" target="_blank" class="link">VIP会员-招聘版</a>
+      <a href="http://vip.baixing.com/auto_buy?src=navbar" target="_blank" class="link">VIP会员-车商版</a>
+      <a href="http://vip.baixing.com/commercialcar_buy?src=navbar" target="_blank" class="link">VIP会员-商用车版</a>
+      <a href="http://vip.baixing.com/house_buy?src=navbar" target="_blank" class="link">VIP会员-房产版</a>
+      <a href="http://vip.baixing.com/service_buy?src=navbar" target="_blank" class="link">VIP会员-服务版</a>
+      <a href="http://vip.baixing.com/pet_buy?src=navbar" target="_blank" class="link">VIP会员-宠物版</a>
+      <a href="http://vip.baixing.com/second_buy?src=navbar" target="_blank" class="link">VIP会员-二手版</a>
+     </div></li>
+   </ul>
+  </section> 
+  <section class="nav-items container">
+   <ul class="nav-content">
+    <li class="nav-item"><a href="http://shanghai.baixing.com/gongzuo/?src=topbar" data-param="src=topbar" target="_blank"><img src="__STATICS__/cdfc1b368dfeb5198a5bf25f9ab30e91.png" /><p class="big-title">招聘</p></a><p class="sub-title"><a href="http://shanghai.baixing.com/gongzuo/?src=topbar" target="_blank" data-param="src=topbar">全职</a>&nbsp;/&nbsp;<a href="http://shanghai.baixing.com/jianzhi/?src=topbar" target="_blank" data-param="src=topbar">兼职</a></p></li>
+    <li class="nav-item"><a href="http://shanghai.baixing.com/cheliang/?src=topbar" data-param="src=topbar" target="_blank"><img src="__STATICS__/53acb9ed6ed736b90f0f9a46dfcbbfa7.png" /><p class="big-title">二手车</p></a><p class="sub-title"><a href="http://shanghai.baixing.com/ershouqiche/?src=topbar" target="_blank" data-param="src=topbar">家用</a>&nbsp;/&nbsp;<a href="http://shanghai.baixing.com/shangyongchepd/?src=topbar" target="_blank" data-param="src=topbar">商用</a></p></li>
+    <li class="nav-item"><a href="http://shanghai.baixing.com/fangpd/?src=topbar" data-param="src=topbar" target="_blank"><img src="__STATICS__/3f00206332af8121ba882f417b4a4b3b.png" /><p class="big-title">房产</p></a><p class="sub-title"><a href="http://shanghai.baixing.com/zhengzu/?src=topbar" target="_blank" data-param="src=topbar">出租</a>&nbsp;/&nbsp;<a href="http://shanghai.baixing.com/ershoufang/?src=topbar" target="_blank" data-param="src=topbar">二手房</a></p></li>
+    <li class="nav-item"><a href="http://shanghai.baixing.com/chongwupd/?src=topbar" data-param="src=topbar" target="_blank"><img src="__STATICS__/0dc650654093dc3d7bbd36cc303720ca.png" /><p class="big-title">宠物</p></a><p class="sub-title"><a href="http://shanghai.baixing.com/chongwujiaoyi/?src=topbar" target="_blank" data-param="src=topbar">狗</a>&nbsp;/&nbsp;<a href="http://shanghai.baixing.com/chongwumao/?src=topbar" target="_blank" data-param="src=topbar">猫</a></p></li>
+    <li class="nav-item"><a href="http://shanghai.baixing.com/fuwu/?src=topbar" data-param="src=topbar" target="_blank"><img src="__STATICS__/a54721962910baf4450c49ef2d4b9bbd.png" /><p class="big-title">生活服务</p></a><p class="sub-title"><a href="http://shanghai.baixing.com/banjia/?src=topbar" target="_blank" data-param="src=topbar">搬家</a>&nbsp;/&nbsp;<a href="http://shanghai.baixing.com/baomu/?src=topbar" target="_blank" data-param="src=topbar">保姆</a></p></li>
+    <li class="nav-item"><a href="http://shanghai.baixing.com/shangwu/?src=topbar" data-param="src=topbar" target="_blank"><img src="__STATICS__/cfa2ab7aff7eeb921f25916dc6d1a44a.png" /><p class="big-title">商务服务</p></a><p class="sub-title"><a href="http://shanghai.baixing.com/jiameng/?src=topbar" target="_blank" data-param="src=topbar">加盟</a>&nbsp;/&nbsp;<a href="http://shanghai.baixing.com/zulin/?src=topbar" target="_blank" data-param="src=topbar">租赁</a></p></li>
+    <li class="nav-item"><a href="http://shanghai.baixing.com/ershou/?src=topbar" data-param="src=topbar" target="_blank"><img src="__STATICS__/c54881431a10ec26282ec6ad4f5acf80.png" /><p class="big-title">二手市场</p></a><p class="sub-title"><a href="http://shanghai.baixing.com/shouji/?src=topbar" target="_blank" data-param="src=topbar">手机</a>&nbsp;/&nbsp;<a href="http://shanghai.baixing.com/dianqi/?src=topbar" target="_blank" data-param="src=topbar">家电</a></p></li>
+    <li class="nav-item"><a href="http://shanghai.baixing.com/huodong/?src=topbar" data-param="src=topbar" target="_blank"><img src="__STATICS__/5249fca138e24a5c99543b241ac30c60.png" /><p class="big-title">交友活动</p></a><p class="sub-title"><a href="http://shanghai.baixing.com/nanzhaonv/?src=topbar" target="_blank" data-param="src=topbar">同城</a>&nbsp;/&nbsp;<a href="http://shanghai.baixing.com/zhenghun/?src=topbar" target="_blank" data-param="src=topbar">征婚</a></p></li>
+    <li class="nav-item"><a href="http://shanghai.baixing.com/jiaoyupeixun/?src=topbar" data-param="src=topbar" target="_blank"><img src="__STATICS__/8ba6efbaa18cd54cac4a2150bfef801e.png" /><p class="big-title">教育培训</p></a><p class="sub-title"><a href="http://shanghai.baixing.com/zxxjiaoyu/?src=topbar" target="_blank" data-param="src=topbar">家教</a>&nbsp;/&nbsp;<a href="http://shanghai.baixing.com/jinengpeixun/?src=topbar" target="_blank" data-param="src=topbar">技能</a></p></li>
+   </ul>
+   <div class="fabu-new section-box">
+    <div class="title normal">
+     最新发布
+    </div>
+    <div class="content">
+     <div id="J_swiperAds" class="swiper-container ads-container swiper-container-vertical">
+      <ul class="swiper-wrapper" style="transform: translate3d(0px, -1200px, 0px); transition-duration: 0ms;">
+       <li class="one-post swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="19" style="height: 60px;"><a href="http://shanghai.baixing.com/xiaoshou/a1171802524.html" target="_blank"><img src="__STATICS__/gongzuo.png" />
+         <div class="title">
+          保单配送、上门理赔专员
+         </div>
+         <div class="time">
+          2分钟前
+         </div></a></li>
+       <li class="one-post swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0" style="height: 60px;"><a href="http://shanghai.baixing.com/ershoufang/a1660209398.html" target="_blank"><img src="__STATICS__/2a9bf4724421f41636dc6c00fd66b6c1_180x180" />
+         <div class="title">
+          11号线地铁，高层景观，靠近小区花园位置，中间楼
+         </div>
+         <div class="time">
+          2分钟前
+         </div></a></li>
+       <li class="one-post swiper-slide" data-swiper-slide-index="1" style="height: 60px;"><a href="http://shanghai.baixing.com/shangpu/a1660209376.html" target="_blank"><img src="__STATICS__/33d77ac62e76efac315071ffb2c72bad_180x180" />
+         <div class="title">
+          6号线地铁口 金博尚品 150平精装家具 正对电梯
+         </div>
+         <div class="time">
+          2分钟前
+         </div></a></li>
+       <li class="one-post swiper-slide" data-swiper-slide-index="2" style="height: 60px;"><a href="http://shanghai.baixing.com/zhengzu/a1658260505.html" target="_blank"><img src="__STATICS__/390f7dc2bdfad8e06b70cc33a5650177.jpg_180x180" />
+         <div class="title">
+          急出租低价好房源-单间1600
+         </div>
+         <div class="time">
+          2分钟前
+         </div></a></li>
+       <li class="one-post swiper-slide" data-swiper-slide-index="3" style="height: 60px;"><a href="http://shanghai.baixing.com/xiaoshou/a1639878270.html" target="_blank"><img src="__STATICS__/gongzuo.png" />
+         <div class="title">
+          高薪诚聘销售代表，有交通补助，有房补，急！急！急！
+         </div>
+         <div class="time">
+          2分钟前
+         </div></a></li>
+       <li class="one-post swiper-slide" data-swiper-slide-index="4" style="height: 60px;"><a href="http://shanghai.baixing.com/changfang/a1610735601.html" target="_blank"><img src="__STATICS__/9709b788572e854b58b413220c8f7c8d.jpg_180x180" />
+         <div class="title">
+          朱泾小面积门面120平出租
+         </div>
+         <div class="time">
+          2分钟前
+         </div></a></li>
+       <li class="one-post swiper-slide" data-swiper-slide-index="5" style="height: 60px;"><a href="http://shanghai.baixing.com/shangpu/a1635686484.html" target="_blank"><img src="__STATICS__/08402c6dc3bdf073bff165e52d390728.jpg_180x180" />
+         <div class="title">
+          11号线地铁口+精装修办公室+平层LOFT可选+车
+         </div>
+         <div class="time">
+          2分钟前
+         </div></a></li>
+       <li class="one-post swiper-slide" data-swiper-slide-index="6" style="height: 60px;"><a href="http://shanghai.baixing.com/changfang/a1430983173.html" target="_blank"><img src="__STATICS__/c0e45f6cf20172d98422847bae833a79.jpg_180x180" />
+         <div class="title">
+          底楼520平米层高8米厂房仓库出租
+         </div>
+         <div class="time">
+          2分钟前
+         </div></a></li>
+       <li class="one-post swiper-slide" data-swiper-slide-index="7" style="height: 60px;"><a href="http://shanghai.baixing.com/shangpu/a1634657947.html" target="_blank"><img src="__STATICS__/a5e5f1089a0197732246a82e1b3e619b.jpg_180x180" />
+         <div class="title">
+          宝山万达4号楼 113平 精装 有钥匙 带隔断
+         </div>
+         <div class="time">
+          2分钟前
+         </div></a></li>
+       <li class="one-post swiper-slide" data-swiper-slide-index="8" style="height: 60px;"><a href="http://shanghai.baixing.com/shangpu/a1519120240.html" target="_blank"><img src="__STATICS__/39dd051697eedf9b1f406725e869dd47_180x180" />
+         <div class="title">
+          SVA越界写字楼3元 ，精装修好户型，等你来
+         </div>
+         <div class="time">
+          2分钟前
+         </div></a></li>
+       <li class="one-post swiper-slide" data-swiper-slide-index="9" style="height: 60px;"><a href="http://shanghai.baixing.com/xinfangchushou/a1614310706.html" target="_blank"><img src="__STATICS__/cf493b02611ac3d2715f2eed0bd63323.jpg_180x180" />
+         <div class="title">
+          嘉兴海盐.湖畔首府，6-8层多层电梯花园洋房可落户
+         </div>
+         <div class="time">
+          2分钟前
+         </div></a></li>
+       <li class="one-post swiper-slide" data-swiper-slide-index="10" style="height: 60px;"><a href="http://shanghai.baixing.com/shangpu/a1513187381.html" target="_blank"><img src="__STATICS__/eb8440b2a309785a361ae2d22cf4eb61.jpg_180x180" />
+         <div class="title">
+          6/8/11号线地铁东方体育中心+世博前滩新楼招租
+         </div>
+         <div class="time">
+          2分钟前
+         </div></a></li>
+       <li class="one-post swiper-slide" data-swiper-slide-index="11" style="height: 60px;"><a href="http://shanghai.baixing.com/shangpu/a1442605666.html" target="_blank"><img src="__STATICS__/cc62190d0ad85903feee797e0c5ab337.jpg_180x180" />
+         <div class="title">
+          杨高北路与巨峰路200㎡起租精装修写字楼
+         </div>
+         <div class="time">
+          2分钟前
+         </div></a></li>
+       <li class="one-post swiper-slide" data-swiper-slide-index="12" style="height: 60px;"><a href="http://shanghai.baixing.com/jinrongfuwu/a1627728971.html" target="_blank"><img src="__STATICS__/b33f906ba3df614b1578bfbffc348172.jpg_180x180" />
+         <div class="title">
+          上海本地资方 1小时放款 利息超低！！！
+         </div>
+         <div class="time">
+          4秒前
+         </div></a></li>
+       <li class="one-post swiper-slide" data-swiper-slide-index="13" style="height: 60px;"><a href="http://shanghai.baixing.com/shangpu/a1660209286.html" target="_blank"><img src="__STATICS__/7f19efa3e883b6c92d13185093a2799c_180x180" />
+         <div class="title">
+          上海南站德必易园 创意办公 精装80平1/3号线口
+         </div>
+         <div class="time">
+          2分钟前
+         </div></a></li>
+       <li class="one-post swiper-slide" data-swiper-slide-index="14" style="height: 60px;"><a href="http://shanghai.baixing.com/baoan/a1467182845.html" target="_blank"><img src="__STATICS__/gongzuo.png" />
+         <div class="title">
+          地铁直招安检站务员
+         </div>
+         <div class="time">
+          2分钟前
+         </div></a></li>
+       <li class="one-post swiper-slide" data-swiper-slide-index="15" style="height: 60px;"><a href="http://shanghai.baixing.com/zhengzu/a1643872318.html" target="_blank"><img src="__STATICS__/596041c018c02c6752dc284fab8a921a.JPG_180x180" />
+         <div class="title">
+          阳城花园 近7号线行知路站 主卧 次卧都有 有厨房
+         </div>
+         <div class="time">
+          2分钟前
+         </div></a></li>
+       <li class="one-post swiper-slide" data-swiper-slide-index="16" style="height: 60px;"><a href="http://shanghai.baixing.com/shangpu/a1649769850.html" target="_blank"><img src="__STATICS__/dfdfa0159419188f3958f49167c21239.jpg_180x180" />
+         <div class="title">
+          8号线大世界，恒积大厦96平，精装修带部分家具！~
+         </div>
+         <div class="time">
+          2分钟前
+         </div></a></li>
+       <li class="one-post swiper-slide" data-swiper-slide-index="17" style="height: 60px;"><a href="http://shanghai.baixing.com/ershougongchengche/a1370181408.html" target="_blank"><img src="__STATICS__/f3d2ead28fc7ba142b0d1d324823fa35.jpg_180x180" />
+         <div class="title">
+          低价出售新车东风天锦6.8栏板首付低！！！！！！！
+         </div>
+         <div class="time">
+          2分钟前
+         </div></a></li>
+       <li class="one-post swiper-slide swiper-slide-prev" data-swiper-slide-index="18" style="height: 60px;"><a href="http://shanghai.baixing.com/shangpu/a1419958379.html" target="_blank"><img src="__STATICS__/5140819f4dda66251ae57190ddb3d56b.jpg_180x180" />
+         <div class="title">
+          2/3/4号线中山公园 长宁来福士高品质共享办公
+         </div>
+         <div class="time">
+          2分钟前
+         </div></a></li>
+       <li class="one-post swiper-slide swiper-slide-active" data-swiper-slide-index="19" style="height: 60px;"><a href="http://shanghai.baixing.com/xiaoshou/a1171802524.html" target="_blank"><img src="__STATICS__/gongzuo.png" />
+         <div class="title">
+          保单配送、上门理赔专员
+         </div>
+         <div class="time">
+          2分钟前
+         </div></a></li>
+       <li class="one-post swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0" style="height: 60px;"><a href="http://shanghai.baixing.com/ershoufang/a1660209398.html" target="_blank"><img src="__STATICS__/2a9bf4724421f41636dc6c00fd66b6c1_180x180" />
+         <div class="title">
+          11号线地铁，高层景观，靠近小区花园位置，中间楼
+         </div>
+         <div class="time">
+          2分钟前
+         </div></a></li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </section> 
+  <div class="container category-content">
+   <section style="width: 325px" class="content-column column-1">
+    <section style="height: 505px" class="section-box category-cheliang">
+     <div class="title">
+      <a href="http://shanghai.baixing.com/cheliang/" target="_blank">车辆</a>
+     </div>
+     <ul class="content">
+      <li class="category-group">
+       <div class="title">
+        <a href="http://shanghai.baixing.com/shangyongchepd/" target="_blank" class="">商用车</a>
+       </div>
+       <ul class="category-ul">
+        <li title="东风"><a href="http://shanghai.baixing.com/ershougongchengche/m177918/" target="_blank" data-param="" class="one-category ">东风</a></li>
+        <li title="解放"><a href="http://shanghai.baixing.com/ershougongchengche/m177905/" target="_blank" data-param="" class="one-category ">解放</a></li>
+        <li title="福田"><a href="http://shanghai.baixing.com/ershougongchengche/m178157/" target="_blank" data-param="" class="one-category ">福田</a></li>
+        <li title="江淮"><a href="http://shanghai.baixing.com/ershougongchengche/m177920/" target="_blank" data-param="" class="one-category ">江淮</a></li>
+        <li title="货车"><a href="http://shanghai.baixing.com/ershougongchengche/" target="_blank" data-param="" class="one-category ">货车</a></li>
+        <li title="工程车"><a href="http://shanghai.baixing.com/gongchengche/" target="_blank" data-param="" class="one-category ">工程车</a></li>
+        <li title="拖拉机"><a href="http://shanghai.baixing.com/tuolaji/" target="_blank" data-param="" class="one-category ">拖拉机</a></li>
+        <li title="自卸车"><a href="http://shanghai.baixing.com/ershougongchengche/m37388/" target="_blank" data-param="" class="one-category ">自卸车</a></li>
+        <li title="挖掘机"><a href="http://shanghai.baixing.com/gongchengche/m178132/" target="_blank" data-param="" class="one-category ">挖掘机</a></li>
+        <li title="平板车"><a href="http://shanghai.baixing.com/ershougongchengche/m37397/" target="_blank" data-param="" class="one-category ">平板车</a></li>
+        <li title="厢式货车"><a href="http://shanghai.baixing.com/ershougongchengche/m37389/" target="_blank" data-param="" class="one-category ">厢式货车</a></li>
+        <li title="半挂车"><a href="http://shanghai.baixing.com/ershougongchengche/m37398/" target="_blank" data-param="" class="one-category ">半挂车</a></li>
+        <li title="搅拌车"><a href="http://shanghai.baixing.com/gongchengche/m178137/" target="_blank" data-param="" class="one-category ">搅拌车</a></li>
+        <li title="牵引车"><a href="http://shanghai.baixing.com/ershougongchengche/m177942/" target="_blank" data-param="" class="one-category ">牵引车</a></li>
+        <li title="洒水车"><a href="http://shanghai.baixing.com/gongchengche/m180249/" target="_blank" data-param="" class="one-category ">洒水车</a></li>
+        <li title="油罐车"><a href="http://shanghai.baixing.com/ershougongchengche/m37396/" target="_blank" data-param="" class="one-category ">油罐车</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        二手车
+       </div>
+       <ul class="category-ul">
+        <li title="0-2万"><a href="http://shanghai.baixing.com/ershouqiche/?%E4%BB%B7%E6%A0%BC%5B0%5D=0&amp;%E4%BB%B7%E6%A0%BC%5B1%5D=2" target="_blank" data-param="" class="one-category ">0-2万</a></li>
+        <li title="2-4万"><a href="http://shanghai.baixing.com/ershouqiche/?%E4%BB%B7%E6%A0%BC%5B0%5D=2&amp;%E4%BB%B7%E6%A0%BC%5B1%5D=4" target="_blank" data-param="" class="one-category ">2-4万</a></li>
+        <li title="4-8万"><a href="http://shanghai.baixing.com/ershouqiche/?%E4%BB%B7%E6%A0%BC%5B0%5D=4&amp;%E4%BB%B7%E6%A0%BC%5B1%5D=8" target="_blank" data-param="" class="one-category ">4-8万</a></li>
+        <li title="8万以上"><a href="http://shanghai.baixing.com/ershouqiche/?%E4%BB%B7%E6%A0%BC%5B0%5D=8&amp;%E4%BB%B7%E6%A0%BC%5B1%5D=" target="_blank" data-param="" class="one-category ">8万以上</a></li>
+        <li title="大众"><a href="http://shanghai.baixing.com/ershouqiche/m9687/" target="_blank" data-param="" class="one-category ">大众</a></li>
+        <li title="丰田"><a href="http://shanghai.baixing.com/ershouqiche/m10735/" target="_blank" data-param="" class="one-category ">丰田</a></li>
+        <li title="本田"><a href="http://shanghai.baixing.com/ershouqiche/m8821/" target="_blank" data-param="" class="one-category ">本田</a></li>
+        <li title="宝马"><a href="http://shanghai.baixing.com/ershouqiche/m7890/" target="_blank" data-param="" class="one-category ">宝马</a></li>
+        <li title="奥迪"><a href="http://shanghai.baixing.com/ershouqiche/m7495/" target="_blank" data-param="" class="one-category ">奥迪</a></li>
+        <li title="别克"><a href="http://shanghai.baixing.com/ershouqiche/m9352/" target="_blank" data-param="" class="one-category ">别克</a></li>
+        <li title="雪弗兰"><a href="http://shanghai.baixing.com/ershouqiche/m17118/" target="_blank" data-param="" class="one-category ">雪弗兰</a></li>
+        <li title="奇瑞"><a href="http://shanghai.baixing.com/ershouqiche/m14525/" target="_blank" data-param="" class="one-category ">奇瑞</a></li>
+        <li title="二手轿车"><a href="http://shanghai.baixing.com/ershouqiche/?src=hotlink" target="_blank" data-param="src=hotlink" class="one-category hot">二手轿车</a></li>
+        <li title="面包车客车"><a href="http://shanghai.baixing.com/ershoukache/" target="_blank" data-param="" class="one-category ">面包车客车</a></li>
+        <li title="摩托车"><a href="http://shanghai.baixing.com/ershoumotuoche/" target="_blank" data-param="" class="one-category ">摩托车</a></li>
+        <li title="电动车"><a href="http://shanghai.baixing.com/ershoudiandongche/" target="_blank" data-param="" class="one-category ">电动车</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        车辆服务
+       </div>
+       <ul class="category-ul">
+        <li title="贷款购车"><a href="http://shanghai.baixing.com/daikuangouche/" target="_blank" data-param="" class="one-category ">贷款购车</a></li>
+        <li title="高价收车"><a href="http://shanghai.baixing.com/cheliangqiugou/" target="_blank" data-param="" class="one-category ">高价收车</a></li>
+        <li title="新车优惠"><a href="http://shanghai.baixing.com/xincheyouhui/" target="_blank" data-param="" class="one-category ">新车优惠</a></li>
+        <li title="抵押车"><a href="http://shanghai.baixing.com/shiguchejiqita/" target="_blank" data-param="" class="one-category ">抵押车</a></li>
+        <li title="本地下线车"><a href="http://shanghai.baixing.com/xiaxianche/" target="_blank" data-param="" class="one-category ">本地下线车</a></li>
+        <li title="过户验车"><a href="http://shanghai.baixing.com/shangpaiyanche/" target="_blank" data-param="" class="one-category ">过户验车</a></li>
+        <li title="维修保养"><a href="http://shanghai.baixing.com/qichebaoyang/" target="_blank" data-param="" class="one-category ">维修保养</a></li>
+        <li title="汽车配件"><a href="http://shanghai.baixing.com/cheyongpeijian/" target="_blank" data-param="" class="one-category ">汽车配件</a></li>
+        <li title="汽车用品"><a href="http://shanghai.baixing.com/qicheyongpin/" target="_blank" data-param="" class="one-category ">汽车用品</a></li>
+        <li title="拼车顺风车"><a href="http://shanghai.baixing.com/pinchesfc/" target="_blank" data-param="" class="one-category ">拼车顺风车</a></li>
+       </ul></li>
+     </ul>
+    </section> 
+    <section style="height: 255px" class="section-box category-fang">
+     <div class="title">
+      <a href="http://shanghai.baixing.com/fangpd/" target="_blank">房产</a>
+     </div>
+     <ul class="content">
+      <li class="category-group">
+       <div class="title">
+        房屋买卖
+       </div>
+       <ul class="category-ul">
+        <li title="求租求购"><a href="http://shanghai.baixing.com/qiufang/" target="_blank" data-param="" class="one-category ">求租求购</a></li>
+        <li title="日租短租"><a href="http://shanghai.baixing.com/duanzu/" target="_blank" data-param="" class="one-category ">日租短租</a></li>
+        <li title="找室友合租"><a href="http://shanghai.baixing.com/zhaoshiyou/" target="_blank" data-param="" class="one-category ">找室友合租</a></li>
+        <li title="新房出售"><a href="http://shanghai.baixing.com/xinfangchushou/" target="_blank" data-param="" class="one-category ">新房出售</a></li>
+        <li title="房屋出租"><a href="http://shanghai.baixing.com/zhengzu/" target="_blank" data-param="" class="one-category ">房屋出租</a></li>
+        <li title="二手房"><a href="http://shanghai.baixing.com/ershoufang/" target="_blank" data-param="" class="one-category ">二手房</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        商业地产
+       </div>
+       <ul class="category-ul">
+        <li title="商铺出租"><a href="http://shanghai.baixing.com/jingyingzhuanrang/" target="_blank" data-param="" class="one-category ">商铺出租</a></li>
+        <li title="商铺出售"><a href="http://shanghai.baixing.com/shangpuchushou/" target="_blank" data-param="" class="one-category ">商铺出售</a></li>
+        <li title="商铺转让"><a href="http://shanghai.baixing.com/shangpuzhuanrang/" target="_blank" data-param="" class="one-category ">商铺转让</a></li>
+        <li title="厂房仓库"><a href="http://shanghai.baixing.com/changfang/?src=hotlink" target="_blank" data-param="src=hotlink" class="one-category hot">厂房仓库</a></li>
+        <li title="写字楼出租"><a href="http://shanghai.baixing.com/shangpu/?src=hotlink" target="_blank" data-param="src=hotlink" class="one-category hot">写字楼出租</a></li>
+        <li title="写字楼出售"><a href="http://shanghai.baixing.com/shoufang/" target="_blank" data-param="" class="one-category ">写字楼出售</a></li>
+       </ul></li>
+     </ul>
+    </section> 
+    <section style="height: 374px" class="section-box category-chongwuleimu">
+     <div class="title">
+      <a href="http://shanghai.baixing.com/chongwupd/" target="_blank">宠物</a>
+     </div>
+     <ul class="content">
+      <li class="category-group">
+       <div class="title">
+        <a href="http://shanghai.baixing.com/chongwujiaoyi/" target="_blank" class="hot">狗狗</a>
+       </div>
+       <ul class="category-ul">
+        <li title="金毛"><a href="http://shanghai.baixing.com/chongwujiaoyi/m33587/" target="_blank" data-param="" class="one-category right-space">金毛</a></li>
+        <li><span class="chongwu-space">/</span></li>
+        <li title="哈士奇"><a href="http://shanghai.baixing.com/chongwujiaoyi/m33565/" target="_blank" data-param="" class="one-category right-space">哈士奇</a></li>
+        <li><span class="chongwu-space">/</span></li>
+        <li title="阿拉斯加"><a href="http://shanghai.baixing.com/chongwujiaoyi/m177986/" target="_blank" data-param="" class="one-category ">阿拉斯加</a></li>
+        <li title="泰迪"><a href="http://shanghai.baixing.com/chongwujiaoyi/m33589/" target="_blank" data-param="" class="one-category right-space">泰迪</a></li>
+        <li><span class="chongwu-space">/</span></li>
+        <li title="斗牛犬"><a href="http://shanghai.baixing.com/chongwujiaoyi/m177962/" target="_blank" data-param="" class="one-category right-space">斗牛犬</a></li>
+        <li><span class="chongwu-space">/</span></li>
+        <li title="格力犬"><a href="http://shanghai.baixing.com/chongwujiaoyi/m33581/" target="_blank" data-param="" class="one-category ">格力犬</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        <a href="http://shanghai.baixing.com/chongwumao/" target="_blank" class="hot">猫猫</a>
+       </div>
+       <ul class="category-ul">
+        <li title="蓝猫"><a href="http://shanghai.baixing.com/chongwumao/m37721/" target="_blank" data-param="" class="one-category right-space">蓝猫</a></li>
+        <li><span class="chongwu-space">/</span></li>
+        <li title="折耳猫"><a href="http://shanghai.baixing.com/chongwumao/m37715/" target="_blank" data-param="" class="one-category right-space">折耳猫</a></li>
+        <li><span class="chongwu-space">/</span></li>
+        <li title="加菲猫"><a href="http://shanghai.baixing.com/chongwumao/m37717/" target="_blank" data-param="" class="one-category ">加菲猫</a></li>
+        <li title="布偶猫"><a href="http://shanghai.baixing.com/chongwumao/m180049/" target="_blank" data-param="" class="one-category right-space">布偶猫</a></li>
+        <li><span class="chongwu-space">/</span></li>
+        <li title="短毛猫"><a href="http://shanghai.baixing.com/chongwumao/m183368/" target="_blank" data-param="" class="one-category right-space">短毛猫</a></li>
+        <li><span class="chongwu-space">/</span></li>
+        <li title="豹猫"><a href="http://shanghai.baixing.com/chongwumao/m37720/" target="_blank" data-param="" class="one-category ">豹猫</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        <a href="http://shanghai.baixing.com/qitachongwu/" target="_blank" class="">花鸟虫鱼</a>
+       </div>
+       <ul class="category-ul">
+        <li title="观赏鱼"><a href="http://shanghai.baixing.com/qitachongwu/m177987/" target="_blank" data-param="" class="one-category right-space">观赏鱼</a></li>
+        <li><span class="chongwu-space">/</span></li>
+        <li title="观赏鸟"><a href="http://shanghai.baixing.com/qitachongwu/m177988/" target="_blank" data-param="" class="one-category right-space">观赏鸟</a></li>
+        <li><span class="chongwu-space">/</span></li>
+        <li title="观赏龟"><a href="http://shanghai.baixing.com/qitachongwu/m183420/" target="_blank" data-param="" class="one-category ">观赏龟</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        <a href="http://shanghai.baixing.com/chongwupeizhong/" target="_blank" class="hot">宠物服务</a>
+       </div>
+       <ul class="category-ul">
+        <li title="配种"><a href="http://shanghai.baixing.com/chongwupeizhong/m33652/" target="_blank" data-param="" class="one-category right-space">配种</a></li>
+        <li><span class="chongwu-space">/</span></li>
+        <li title="训练"><a href="http://shanghai.baixing.com/chongwupeizhong/m33658/" target="_blank" data-param="" class="one-category right-space">训练</a></li>
+        <li><span class="chongwu-space">/</span></li>
+        <li title="托运"><a href="http://shanghai.baixing.com/chongwupeizhong/m33657/" target="_blank" data-param="" class="one-category ">托运</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        <a href="http://shanghai.baixing.com/chongwupeizhong/m33659/" target="_blank" class="">宠物医院</a>
+       </div>
+       <ul class="category-ul">
+        <li title="美容"><a href="http://shanghai.baixing.com/chongwupeizhong/m33656/" target="_blank" data-param="" class="one-category right-space">美容</a></li>
+        <li><span class="chongwu-space">/</span></li>
+        <li title="寄养"><a href="http://shanghai.baixing.com/chongwupeizhong/m33653/" target="_blank" data-param="" class="one-category right-space">寄养</a></li>
+        <li><span class="chongwu-space">/</span></li>
+        <li title="水族服务"><a href="http://shanghai.baixing.com/chongwupeizhong/m183443/" target="_blank" data-param="" class="one-category ">水族服务</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        <a href="http://shanghai.baixing.com/chongwuyongpin/" target="_blank" class="">宠物用品</a>
+       </div>
+       <ul class="category-ul">
+        <li title="狗用品"><a href="http://shanghai.baixing.com/chongwuyongpin/m178909/" target="_blank" data-param="" class="one-category right-space">狗用品</a></li>
+        <li><span class="chongwu-space">/</span></li>
+        <li title="猫用品"><a href="http://shanghai.baixing.com/chongwuyongpin/m178911/" target="_blank" data-param="" class="one-category right-space">猫用品</a></li>
+        <li><span class="chongwu-space">/</span></li>
+        <li title="水族用品"><a href="http://shanghai.baixing.com/chongwuyongpin/m178910/" target="_blank" data-param="" class="one-category ">水族用品</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        <a href="http://shanghai.baixing.com/chongwulingyang/" target="_blank" class="">宠物公益</a>
+       </div>
+       <ul class="category-ul">
+        <li title="宠物赠送"><a href="http://shanghai.baixing.com/chongwulingyang/" target="_blank" data-param="" class="one-category right-space">宠物赠送</a></li>
+        <li><span class="chongwu-space">/</span></li>
+        <li title="寻宠启事"><a href="http://shanghai.baixing.com/zhaochongwu/" target="_blank" data-param="" class="one-category ">寻宠启事</a></li>
+       </ul></li>
+     </ul>
+    </section> 
+   </section> 
+   <section style="width: 325px" class="content-column column-2">
+    <section style="height: 737px" class="section-box category-gongzuo">
+     <div class="title">
+      <a href="http://shanghai.baixing.com/gongzuo/" target="_blank">招聘</a> 
+      <ul class="label-container text-label-block web-home-category-text"> 
+       <li> <a href="http://shanghai.baixing.com/resumes/" target="_blank" class="hot-link">简历库</a> <span class="tag-hot"></span> </li> 
+       <li> <a href="http://shanghai.baixing.com/zhaopinhui/" target="_blank">人才招聘会</a> </li> 
+       <li> <a href="http://shanghai.baixing.com/xueshengjianzhi/?qingtuan=1" target="_blank">精品兼职</a> </li> 
+      </ul> 
+     </div>
+     <ul class="content">
+      <li class="category-group">
+       <div class="title">
+        福利专区
+       </div>
+       <ul class="category-ul">
+        <li title="年底双薪"><a href="http://shanghai.baixing.com/gongzuo/%E7%A6%8F%E5%88%A9%E5%BE%85%E9%81%87_%E5%B9%B4%E5%BA%95%E5%8F%8C%E8%96%AA/" target="_blank" data-param="" class="one-category ">年底双薪</a></li>
+        <li title="包吃"><a href="http://shanghai.baixing.com/gongzuo/%E7%A6%8F%E5%88%A9%E5%BE%85%E9%81%87_%E5%8C%85%E5%90%83/" target="_blank" data-param="" class="one-category ">包吃</a></li>
+        <li title="包住"><a href="http://shanghai.baixing.com/gongzuo/%E7%A6%8F%E5%88%A9%E5%BE%85%E9%81%87_%E5%8C%85%E4%BD%8F/" target="_blank" data-param="" class="one-category ">包住</a></li>
+        <li title="五险一金"><a href="http://shanghai.baixing.com/gongzuo/%E7%A6%8F%E5%88%A9%E5%BE%85%E9%81%87_%E4%BA%94%E9%99%A9%E4%B8%80%E9%87%91/" target="_blank" data-param="" class="one-category ">五险一金</a></li>
+        <li title="交通补助"><a href="http://shanghai.baixing.com/gongzuo/%E7%A6%8F%E5%88%A9%E5%BE%85%E9%81%87_%E4%BA%A4%E9%80%9A%E8%A1%A5%E5%8A%A9/" target="_blank" data-param="" class="one-category ">交通补助</a></li>
+        <li title="房补"><a href="http://shanghai.baixing.com/gongzuo/%E7%A6%8F%E5%88%A9%E5%BE%85%E9%81%87_%E6%88%BF%E8%A1%A5/" target="_blank" data-param="" class="one-category ">房补</a></li>
+        <li title="双休"><a href="http://shanghai.baixing.com/gongzuo/%E7%A6%8F%E5%88%A9%E5%BE%85%E9%81%87_%E5%8F%8C%E4%BC%91/" target="_blank" data-param="" class="one-category ">双休</a></li>
+        <li title="带薪年假"><a href="http://shanghai.baixing.com/gongzuo/%E7%A6%8F%E5%88%A9%E5%BE%85%E9%81%87_%E5%B8%A6%E8%96%AA%E5%B9%B4%E5%81%87/" target="_blank" data-param="" class="one-category ">带薪年假</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        名企专区
+       </div>
+       <ul class="category-ul">
+        <li title="太平洋房屋"><a href="http://www.baixing.com/company/575ba7d34edee349828b456b" target="_blank" data-param="" class="one-category ">太平洋房屋</a></li>
+        <li title="维音"><a href="http://www.baixing.com/company/5922be4acafbbda69d122fb3" target="_blank" data-param="" class="one-category ">维音</a></li>
+        <li title="耶里夏丽"><a href="http://www.baixing.com/company/57b2a7c94fc0bd660c8b4568" target="_blank" data-param="" class="one-category ">耶里夏丽</a></li>
+        <li title="海底捞"><a href="http://www.baixing.com/company/585ddc6c90221012668b4568" target="_blank" data-param="" class="one-category ">海底捞</a></li>
+        <li title="阿迪达斯"><a href="http://www.baixing.com/company/5923b7977a7bd0bcb451fd78" target="_blank" data-param="" class="one-category ">阿迪达斯</a></li>
+        <li title="京东"><a href="http://www.baixing.com/company/591979ca128ee338fc15e475" target="_blank" data-param="" class="one-category ">京东</a></li>
+        <li title="我爱我家"><a href="http://www.baixing.com/company/5919167a33792f3b5c619143" target="_blank" data-param="" class="one-category ">我爱我家</a></li>
+        <li title="晨光文具"><a href="http://www.baixing.com/company/57b171118f4036f9738b4568" target="_blank" data-param="" class="one-category ">晨光文具</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        热招行业
+       </div>
+       <ul class="category-ul">
+        <li title="销售"><a href="http://shanghai.baixing.com/xiaoshou/?src=hotlink" target="_blank" data-param="src=hotlink" class="one-category hot">销售</a></li>
+        <li title="工人"><a href="http://shanghai.baixing.com/gongren/?src=hotlink" target="_blank" data-param="src=hotlink" class="one-category hot">工人</a></li>
+        <li title="司机"><a href="http://shanghai.baixing.com/siji/?src=hotlink" target="_blank" data-param="src=hotlink" class="one-category hot">司机</a></li>
+        <li title="餐饮"><a href="http://shanghai.baixing.com/chushi/" target="_blank" data-param="" class="one-category ">餐饮</a></li>
+        <li title="出国劳务"><a href="http://shanghai.baixing.com/chuguolaowu/" target="_blank" data-param="" class="one-category ">出国劳务</a></li>
+        <li title="物流运输"><a href="http://shanghai.baixing.com/songhuoyuan/" target="_blank" data-param="" class="one-category ">物流运输</a></li>
+        <li title="超市零售"><a href="http://shanghai.baixing.com/dianyuan/" target="_blank" data-param="" class="one-category ">超市零售</a></li>
+        <li title="家政保洁"><a href="http://shanghai.baixing.com/bangyong/" target="_blank" data-param="" class="one-category ">家政保洁</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        热招职位
+       </div>
+       <ul class="category-ul">
+        <li title="销售"><a href="http://shanghai.baixing.com/xiaoshou/?src=hotlink" target="_blank" data-param="src=hotlink" class="one-category hot">销售</a></li>
+        <li title="客服"><a href="http://shanghai.baixing.com/kefu/" target="_blank" data-param="" class="one-category ">客服</a></li>
+        <li title="文员"><a href="http://shanghai.baixing.com/wenmi/m177608/" target="_blank" data-param="" class="one-category ">文员</a></li>
+        <li title="会计"><a href="http://shanghai.baixing.com/kuaiji/" target="_blank" data-param="" class="one-category ">会计</a></li>
+        <li title="普工"><a href="http://shanghai.baixing.com/gongren/m37318/" target="_blank" data-param="" class="one-category ">普工</a></li>
+        <li title="保安"><a href="http://shanghai.baixing.com/baoan/" target="_blank" data-param="" class="one-category ">保安</a></li>
+        <li title="保姆"><a href="http://shanghai.baixing.com/bangyong/m37279/" target="_blank" data-param="" class="one-category ">保姆</a></li>
+        <li title="司机"><a href="http://shanghai.baixing.com/siji/?src=hotlink" target="_blank" data-param="src=hotlink" class="one-category hot">司机</a></li>
+        <li title="厨师"><a href="http://shanghai.baixing.com/chushi/m37312/" target="_blank" data-param="" class="one-category ">厨师</a></li>
+        <li title="检验"><a href="http://shanghai.baixing.com/shengchan/m183168/" target="_blank" data-param="" class="one-category ">检验</a></li>
+        <li title="服务员"><a href="http://shanghai.baixing.com/chushi/m37242/" target="_blank" data-param="" class="one-category ">服务员</a></li>
+        <li title="淘宝客服"><a href="http://shanghai.baixing.com/taobaojob/m178194/" target="_blank" data-param="" class="one-category ">淘宝客服</a></li>
+        <li title="保洁"><a href="http://shanghai.baixing.com/bangyong/m177618/" target="_blank" data-param="" class="one-category ">保洁</a></li>
+        <li title="采购"><a href="http://shanghai.baixing.com/caigou/m178281/" target="_blank" data-param="" class="one-category ">采购</a></li>
+        <li title="快递员"><a href="http://shanghai.baixing.com/songhuoyuan/m177614/" target="_blank" data-param="" class="one-category ">快递员</a></li>
+        <li title="平面设计"><a href="http://shanghai.baixing.com/meigong/" target="_blank" data-param="" class="one-category ">平面设计</a></li>
+        <li title="美发"><a href="http://shanghai.baixing.com/meirongshi/" target="_blank" data-param="" class="one-category ">美发</a></li>
+        <li title="出纳"><a href="http://shanghai.baixing.com/kuaiji/m37331/" target="_blank" data-param="" class="one-category ">出纳</a></li>
+        <li title="收银员"><a href="http://shanghai.baixing.com/dianyuan/m178931/" target="_blank" data-param="" class="one-category ">收银员</a></li>
+        <li title="健身教练"><a href="http://shanghai.baixing.com/jianshen/m177817/" target="_blank" data-param="" class="one-category ">健身教练</a></li>
+        <li title="外贸"><a href="http://shanghai.baixing.com/caigou/m178279/" target="_blank" data-param="" class="one-category ">外贸</a></li>
+        <li title="幼教"><a href="http://shanghai.baixing.com/laoshi/m37339/" target="_blank" data-param="" class="one-category ">幼教</a></li>
+        <li title="洗车工"><a href="http://shanghai.baixing.com/qichemeirong/m178223/" target="_blank" data-param="" class="one-category ">洗车工</a></li>
+        <li title="直播主播"><a href="http://shanghai.baixing.com/wangluozhibo/m183173/" target="_blank" data-param="" class="one-category ">直播主播</a></li>
+        <li title="房产"><a href="http://shanghai.baixing.com/fangdichan/" target="_blank" data-param="" class="one-category ">房产</a></li>
+        <li title="演员"><a href="http://shanghai.baixing.com/yinshiyule/m178748/" target="_blank" data-param="" class="one-category ">演员</a></li>
+        <li title="美容师"><a href="http://shanghai.baixing.com/meirongshi/m177593/" target="_blank" data-param="" class="one-category ">美容师</a></li>
+        <li title="仓库管理"><a href="http://shanghai.baixing.com/songhuoyuan/m177613/" target="_blank" data-param="" class="one-category ">仓库管理</a></li>
+        <li title="电工"><a href="http://shanghai.baixing.com/gongren/m37865/" target="_blank" data-param="" class="one-category ">电工</a></li>
+        <li title="导游"><a href="http://shanghai.baixing.com/daoyou/m178269/" target="_blank" data-param="" class="one-category ">导游</a></li>
+        <li title="导购员"><a href="http://shanghai.baixing.com/dianyuan/m37229/" target="_blank" data-param="" class="one-category ">导购员</a></li>
+        <li title="摄影摄像"><a href="http://shanghai.baixing.com/yinshiyule/m178750/" target="_blank" data-param="" class="one-category ">摄影摄像</a></li>
+       </ul></li>
+     </ul>
+     <div class="category-banner"> 
+      <div data-ride="carousel" id="carousel_web-home-category-banner" class="carousel slide"> 
+       <div role="listbox" class="carousel-inner"> 
+        <div class="item active"> 
+         <a data-atype="b-x-a-d-a" href="http://www.baixing.com/help/feed?id=fd53284" target="_blank"> <img src="__STATICS__/23060589cb3c227107edaa1cbae9ebab.png" /> </a> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+    </section> 
+    <section style="height: 191px" class="section-box category-jianzhi">
+     <div class="title">
+      <a href="http://shanghai.baixing.com/jianzhi/" target="_blank">兼职</a> 
+      <ul class="label-container text-label-block web-home-category-text"> 
+       <li> <a href="http://shanghai.baixing.com/redirect/index?r=dXJsPWh0dHBzJTNBJTJGJTJGd3d3LnF0c2hlLmNvbSUyRnRhc2tsaXN0JTNGYnh3JTNEdHJ1ZSZldmVudFR5cGU9ZXh0ZXJuYWxfcmVkaXJlY3QmZXZlbnRWYWx1ZSU1QmFjdGlvbiU1RD1hZF9zbG90X2NsaWNrJmV2ZW50VmFsdWUlNUJ0cmFja3R5cGUlNUQ9ZXZlbnQmZXZlbnRWYWx1ZSU1QnBvc2l0aW9uJTVEPXdlYi1ob21lLWNhdGVnb3J5LXRleHQmZXZlbnRWYWx1ZSU1QmFkX3Nsb3RfaWQlNUQ9d2ViLWhvbWUtY2F0ZWdvcnktdGV4dCZldmVudFZhbHVlJTVCcGxhdGZvcm0lNUQ9ZGVza3RvcCZldmVudFZhbHVlJTVCcmVmZXIlNUQ9JmV2ZW50VmFsdWUlNUJocmVmJTVEPWh0dHAlM0ElMkYlMkZzaGFuZ2hhaS5iYWl4aW5nLmNvbSUyRiZldmVudFZhbHVlJTVCdXJsJTVEPWh0dHBzJTNBJTJGJTJGd3d3LnF0c2hlLmNvbSUyRnRhc2tsaXN0JTNGYnh3JTNEdHJ1ZSZldmVudFZhbHVlJTVCdWElNUQ9TW96aWxsYSUyRjUuMCslMjhXaW5kb3dzK1UrV2luZG93cytOVCs2LjErZW4tVVMrcnYlM0ExLjkuMS42JTI5K0dlY2tvJTJGMjAwOTEyMDErRmlyZWZveCUyRjMuNS42KyUyOC5ORVQrQ0xSKzMuNS4zMDcyOSUyOSZldmVudFZhbHVlJTVCdGltZSU1RD0yMDE4LTExLTMwKzA5JTNBMzYlM0E1NQ,," target="_blank">兼职小任务</a> </li> 
+      </ul> 
+     </div>
+     <ul class="content">
+      <li class="category-group">
+       <ul class="category-ul">
+        <li title="家教"><a href="http://shanghai.baixing.com/laoshi/m177819/" target="_blank" data-param="" class="one-category ">家教</a></li>
+        <li title="财务会计"><a href="http://shanghai.baixing.com/kuaijijianzhi/" target="_blank" data-param="" class="one-category ">财务会计</a></li>
+        <li title="服务员"><a href="http://shanghai.baixing.com/cantingjianzhi/?src=hotlink" target="_blank" data-param="src=hotlink" class="one-category hot">服务员</a></li>
+        <li title="促销导购"><a href="http://shanghai.baixing.com/cuxiaojianzhi/" target="_blank" data-param="" class="one-category ">促销导购</a></li>
+        <li title="学生兼职"><a href="http://shanghai.baixing.com/xueshengjianzhi/" target="_blank" data-param="" class="one-category ">学生兼职</a></li>
+        <li title="传单派发"><a href="http://shanghai.baixing.com/paifa/" target="_blank" data-param="" class="one-category ">传单派发</a></li>
+        <li title="演员"><a href="http://shanghai.baixing.com/yanyuan/" target="_blank" data-param="" class="one-category ">演员</a></li>
+        <li title="客服"><a href="http://shanghai.baixing.com/kefujianzhi/" target="_blank" data-param="" class="one-category ">客服</a></li>
+        <li title="模特"><a href="http://shanghai.baixing.com/mote/?src=hotlink" target="_blank" data-param="src=hotlink" class="one-category hot">模特</a></li>
+        <li title="平面设计"><a href="http://shanghai.baixing.com/shejijianzhi/" target="_blank" data-param="" class="one-category ">平面设计</a></li>
+        <li title="才艺老师"><a href="http://shanghai.baixing.com/caiyilaoshi/" target="_blank" data-param="" class="one-category ">才艺老师</a></li>
+        <li title="充场观众"><a href="http://shanghai.baixing.com/chongchang/" target="_blank" data-param="" class="one-category ">充场观众</a></li>
+        <li title="网络兼职"><a href="http://shanghai.baixing.com/wangluojianzhi/?src=hotlink" target="_blank" data-param="src=hotlink" class="one-category hot">网络兼职</a></li>
+        <li title="展会活动"><a href="http://shanghai.baixing.com/zhanhuijianzhi/" target="_blank" data-param="" class="one-category ">展会活动</a></li>
+        <li title="兼职群"><a href="http://shanghai.baixing.com/qun/" target="_blank" data-param="" class="one-category ">兼职群</a></li>
+        <li title="其他兼职"><a href="http://shanghai.baixing.com/qitajianzhi/" target="_blank" data-param="" class="one-category ">其他兼职</a></li>
+       </ul></li>
+     </ul>
+    </section> 
+    <section style="height: 206px" class="section-box category-jiaoyupeixun">
+     <div class="title">
+      <a href="http://shanghai.baixing.com/jiaoyupeixun/" target="_blank">培训</a>
+     </div>
+     <ul class="content">
+      <li class="category-group">
+       <ul class="category-ul">
+        <li title="家教机构"><a href="http://shanghai.baixing.com/zxxjiaoyu/?src=hotlink" target="_blank" data-param="src=hotlink" class="one-category hot">家教机构</a></li>
+        <li title="家教个人"><a href="http://shanghai.baixing.com/jiajiaojiaoyu/" target="_blank" data-param="" class="one-category ">家教个人</a></li>
+        <li title="职业技能"><a href="http://shanghai.baixing.com/jinengpeixun/?src=hotlink" target="_blank" data-param="src=hotlink" class="one-category hot">职业技能</a></li>
+        <li title="外语培训"><a href="http://shanghai.baixing.com/waiyupeixun/" target="_blank" data-param="" class="one-category ">外语培训</a></li>
+        <li title="学历教育"><a href="http://shanghai.baixing.com/xuelipeixun/" target="_blank" data-param="" class="one-category ">学历教育</a></li>
+        <li title="电脑培训"><a href="http://shanghai.baixing.com/diannaopeixun/" target="_blank" data-param="" class="one-category ">电脑培训</a></li>
+        <li title="设计培训"><a href="http://shanghai.baixing.com/shejipeixun/" target="_blank" data-param="" class="one-category ">设计培训</a></li>
+        <li title="体育培训"><a href="http://shanghai.baixing.com/tiyupeixun/" target="_blank" data-param="" class="one-category ">体育培训</a></li>
+        <li title="艺术培训"><a href="http://shanghai.baixing.com/wentipeixun/" target="_blank" data-param="" class="one-category ">艺术培训</a></li>
+        <li title="幼儿培训"><a href="http://shanghai.baixing.com/youerpeixun/" target="_blank" data-param="" class="one-category ">幼儿培训</a></li>
+        <li title="出国留学"><a href="http://shanghai.baixing.com/xuelipeixun/m36111/" target="_blank" data-param="" class="one-category ">出国留学</a></li>
+        <li title="移民服务"><a href="http://shanghai.baixing.com/yiminfuwu/" target="_blank" data-param="" class="one-category ">移民服务</a></li>
+       </ul></li>
+     </ul> 
+    </section> 
+   </section> 
+   <section style="width: 260px" class="content-column column-3">
+    <section style="height: 903px" class="section-box category-fuwu">
+     <div class="title">
+      <a href="http://shanghai.baixing.com/fuwu/" target="_blank">生活服务</a> 
+      <ul class="label-container text-label-block web-home-category-text"> 
+       <li> <a href="http://shanghai.baixing.com/redirect/index?r=dXJsPWh0dHAlM0ElMkYlMkZ3d3cuc3VodWlzaG91LmNjJTJGJTNGYmRzb3VyY2UlM0RiYWl4aW5nLXBjJmV2ZW50VHlwZT1leHRlcm5hbF9yZWRpcmVjdCZldmVudFZhbHVlJTVCYWN0aW9uJTVEPWFkX3Nsb3RfY2xpY2smZXZlbnRWYWx1ZSU1QnRyYWNrdHlwZSU1RD1ldmVudCZldmVudFZhbHVlJTVCcG9zaXRpb24lNUQ9d2ViLWhvbWUtY2F0ZWdvcnktdGV4dCZldmVudFZhbHVlJTVCYWRfc2xvdF9pZCU1RD13ZWItaG9tZS1jYXRlZ29yeS10ZXh0JmV2ZW50VmFsdWUlNUJwbGF0Zm9ybSU1RD1kZXNrdG9wJmV2ZW50VmFsdWUlNUJyZWZlciU1RD0mZXZlbnRWYWx1ZSU1QmhyZWYlNUQ9aHR0cCUzQSUyRiUyRnNoYW5naGFpLmJhaXhpbmcuY29tJTJGJmV2ZW50VmFsdWUlNUJ1cmwlNUQ9aHR0cCUzQSUyRiUyRnd3dy5zdWh1aXNob3UuY2MlMkYlM0ZiZHNvdXJjZSUzRGJhaXhpbmctcGMmZXZlbnRWYWx1ZSU1QnVhJTVEPU1vemlsbGElMkY1LjArJTI4V2luZG93cytVK1dpbmRvd3MrTlQrNi4xK2VuLVVTK3J2JTNBMS45LjEuNiUyOStHZWNrbyUyRjIwMDkxMjAxK0ZpcmVmb3glMkYzLjUuNislMjguTkVUK0NMUiszLjUuMzA3MjklMjkmZXZlbnRWYWx1ZSU1QnRpbWUlNUQ9MjAxOC0xMS0zMCswOSUzQTM2JTNBNTU," target="_blank">手机回收</a> </li> 
+      </ul> 
+     </div> 
+     <ul class="content">
+      <li class="category-group">
+       <div class="title">
+        家政服务
+       </div>
+       <ul class="category-ul">
+        <li title="保姆月嫂"><a href="http://shanghai.baixing.com/baomu/" target="_blank" data-param="" class="one-category ">保姆月嫂</a></li>
+        <li title="生活配送"><a href="http://shanghai.baixing.com/canyin/" target="_blank" data-param="" class="one-category ">生活配送</a></li>
+        <li title="物品回收"><a href="http://shanghai.baixing.com/wupinhuishou/?src=hotlink" target="_blank" data-param="src=hotlink" class="one-category hot">物品回收</a></li>
+        <li title="搬家"><a href="http://shanghai.baixing.com/banjia/" target="_blank" data-param="" class="one-category ">搬家</a></li>
+        <li title="保洁清洗"><a href="http://shanghai.baixing.com/baojieqingxi/" target="_blank" data-param="" class="one-category ">保洁清洗</a></li>
+        <li title="洗衣护理"><a href="http://shanghai.baixing.com/xiyihuli/" target="_blank" data-param="" class="one-category ">洗衣护理</a></li>
+        <li title="空调移机"><a href="http://shanghai.baixing.com/jiadianweixiu/m35854/" target="_blank" data-param="" class="one-category ">空调移机</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        维修服务
+       </div>
+       <ul class="category-ul">
+        <li title="开锁修锁"><a href="http://shanghai.baixing.com/kaisuo/" target="_blank" data-param="" class="one-category ">开锁修锁</a></li>
+        <li title="管道维修"><a href="http://shanghai.baixing.com/weixiu/" target="_blank" data-param="" class="one-category ">管道维修</a></li>
+        <li title="房屋维修"><a href="http://shanghai.baixing.com/fangwuweixiu/" target="_blank" data-param="" class="one-category ">房屋维修</a></li>
+        <li title="家电维修"><a href="http://shanghai.baixing.com/jiadianweixiu/" target="_blank" data-param="" class="one-category ">家电维修</a></li>
+        <li title="家具维修"><a href="http://shanghai.baixing.com/jiajuweixiu/" target="_blank" data-param="" class="one-category ">家具维修</a></li>
+        <li title="电脑维修"><a href="http://shanghai.baixing.com/diannaoweixiu/" target="_blank" data-param="" class="one-category ">电脑维修</a></li>
+        <li title="手机维修"><a href="http://shanghai.baixing.com/shoujiweixiu/" target="_blank" data-param="" class="one-category ">手机维修</a></li>
+        <li title="数码维修"><a href="http://shanghai.baixing.com/shumaweixiu/" target="_blank" data-param="" class="one-category ">数码维修</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        装修建材
+       </div>
+       <ul class="category-ul">
+        <li title="家庭装修"><a href="http://shanghai.baixing.com/jiatingzhuangxiu/" target="_blank" data-param="" class="one-category ">家庭装修</a></li>
+        <li title="软装装饰"><a href="http://shanghai.baixing.com/ruanzhuang/" target="_blank" data-param="" class="one-category ">软装装饰</a></li>
+        <li title="建材"><a href="http://shanghai.baixing.com/jiancaizhuangshi/" target="_blank" data-param="" class="one-category ">建材</a></li>
+        <li title="工装装修"><a href="http://shanghai.baixing.com/zhuangxiu/" target="_blank" data-param="" class="one-category ">工装装修</a></li>
+        <li title="拆旧"><a href="http://shanghai.baixing.com/chaijiu/" target="_blank" data-param="" class="one-category ">拆旧</a></li>
+        <li title="局部翻新"><a href="http://shanghai.baixing.com/jiatingzhuangxiu/m179300/" target="_blank" data-param="" class="one-category ">局部翻新</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        汽车服务
+       </div>
+       <ul class="category-ul">
+        <li title="租车"><a href="http://shanghai.baixing.com/gerenzuche/" target="_blank" data-param="" class="one-category ">租车</a></li>
+        <li title="陪驾陪练"><a href="http://shanghai.baixing.com/peijiapeilian/" target="_blank" data-param="" class="one-category ">陪驾陪练</a></li>
+        <li title="代驾"><a href="http://shanghai.baixing.com/peijiafuwu/" target="_blank" data-param="" class="one-category ">代驾</a></li>
+        <li title="驾校"><a href="http://shanghai.baixing.com/jiaxiaofuwu/" target="_blank" data-param="" class="one-category ">驾校</a></li>
+        <li title="维修保养"><a href="http://shanghai.baixing.com/qichebaoyang/" target="_blank" data-param="" class="one-category ">维修保养</a></li>
+        <li title="车险服务"><a href="http://shanghai.baixing.com/baoxianfuwu/m178815/" target="_blank" data-param="" class="one-category ">车险服务</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        婚庆摄影
+       </div>
+       <ul class="category-ul">
+        <li title="婚庆摄影"><a href="http://shanghai.baixing.com/sheyingfuwu/" target="_blank" data-param="" class="one-category ">婚庆摄影</a></li>
+        <li title="婚庆服务"><a href="http://shanghai.baixing.com/siyi/" target="_blank" data-param="" class="one-category ">婚庆服务</a></li>
+        <li title="婚车租赁"><a href="http://shanghai.baixing.com/siyi/m36001/" target="_blank" data-param="" class="one-category ">婚车租赁</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        旅游服务
+       </div>
+       <ul class="category-ul">
+        <li title="签证服务"><a href="http://shanghai.baixing.com/qianzhengfuwu/" target="_blank" data-param="" class="one-category ">签证服务</a></li>
+        <li title="酒店预订"><a href="http://shanghai.baixing.com/jiudianfuwu/" target="_blank" data-param="" class="one-category ">酒店预订</a></li>
+        <li title="旅游度假"><a href="http://shanghai.baixing.com/lvxingshe/" target="_blank" data-param="" class="one-category ">旅游度假</a></li>
+        <li title="机票服务"><a href="http://shanghai.baixing.com/jipiaofuwu/" target="_blank" data-param="" class="one-category ">机票服务</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        休闲服务
+       </div>
+       <ul class="category-ul">
+        <li title="休闲娱乐"><a href="http://shanghai.baixing.com/yule/" target="_blank" data-param="" class="one-category ">休闲娱乐</a></li>
+        <li title="运动健身"><a href="http://shanghai.baixing.com/yundongjianshen/" target="_blank" data-param="" class="one-category ">运动健身</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        其他服务
+       </div>
+       <ul class="category-ul">
+        <li title="丽人服务"><a href="http://shanghai.baixing.com/meirongfuwu/" target="_blank" data-param="" class="one-category ">丽人服务</a></li>
+        <li title="鲜花盆景"><a href="http://shanghai.baixing.com/xianhualipin/" target="_blank" data-param="" class="one-category ">鲜花盆景</a></li>
+        <li title="本地名站"><a href="http://shanghai.baixing.com/bendimingzhan/" target="_blank" data-param="" class="one-category ">本地名站</a></li>
+        <li title="商品出售"><a href="http://shanghai.baixing.com/quanxinshangjia/" target="_blank" data-param="" class="one-category ">商品出售</a></li>
+        <li title="白事服务"><a href="http://shanghai.baixing.com/binzang/" target="_blank" data-param="" class="one-category ">白事服务</a></li>
+        <li title="工艺鉴定"><a href="http://shanghai.baixing.com/gongyijianding/" target="_blank" data-param="" class="one-category ">工艺鉴定</a></li>
+        <li title="咨询服务"><a href="http://shanghai.baixing.com/zixun/" target="_blank" data-param="" class="one-category ">咨询服务</a></li>
+        <li title="其他服务"><a href="http://shanghai.baixing.com/qitafuwu/" target="_blank" data-param="" class="one-category ">其他服务</a></li>
+       </ul></li>
+     </ul>
+    </section> 
+    <section style="height: 240px" class="section-box category-huodong">
+     <div class="title">
+      <a href="http://shanghai.baixing.com/huodong/" target="_blank">交友</a>
+     </div>
+     <ul class="content">
+      <li class="category-group">
+       <ul class="category-ul">
+        <li title="同城交友"><a href="http://shanghai.baixing.com/nanzhaonv/?src=hotlink" target="_blank" data-param="src=hotlink" class="one-category hot">同城交友</a></li>
+        <li title="同城征婚"><a href="http://shanghai.baixing.com/zhenghun/?src=hotlink" target="_blank" data-param="src=hotlink" class="one-category hot">同城征婚</a></li>
+        <li title="同城活动"><a href="http://shanghai.baixing.com/juhui/?src=hotlink" target="_blank" data-param="src=hotlink" class="one-category hot">同城活动</a></li>
+        <li title="异地交友"><a href="http://shanghai.baixing.com/qitajiaoyou/" target="_blank" data-param="" class="one-category ">异地交友</a></li>
+        <li title="婚介服务"><a href="http://shanghai.baixing.com/hunjie/" target="_blank" data-param="" class="one-category ">婚介服务</a></li>
+        <li title="技能交换"><a href="http://shanghai.baixing.com/jinengjiaohuan/" target="_blank" data-param="" class="one-category ">技能交换</a></li>
+        <li title="找人寻物"><a href="http://shanghai.baixing.com/xunrenqishi/" target="_blank" data-param="" class="one-category ">找人寻物</a></li>
+        <li title="宝贝寻家"><a href="http://shanghai.baixing.com/baobeixunjia/" target="_blank" data-param="" class="one-category ">宝贝寻家</a></li>
+        <li title="交友群"><a href="http://shanghai.baixing.com/jiaoyouqun/" target="_blank" data-param="" class="one-category ">交友群</a></li>
+       </ul></li>
+     </ul>
+    </section> 
+   </section> 
+   <section style="width: 260px" class="content-column column-4">
+    <section style="height: 668px" class="section-box category-shangwu">
+     <div class="title">
+      <a href="http://shanghai.baixing.com/shangwu/" target="_blank">商务服务</a>
+     </div>
+     <ul class="content">
+      <li class="category-group">
+       <div class="title">
+        商务服务
+       </div>
+       <ul class="category-ul">
+        <li title="担保贷款"><a href="http://shanghai.baixing.com/danbaodaikuan/?src=hotlink" target="_blank" data-param="src=hotlink" class="one-category hot">担保贷款</a></li>
+        <li title="投资理财"><a href="http://shanghai.baixing.com/licaifuwu/" target="_blank" data-param="" class="one-category ">投资理财</a></li>
+        <li title="财务会计"><a href="http://shanghai.baixing.com/kuaijifuwu/" target="_blank" data-param="" class="one-category ">财务会计</a></li>
+        <li title="公司注册"><a href="http://shanghai.baixing.com/daibanzhuce/?src=hotlink" target="_blank" data-param="src=hotlink" class="one-category hot">公司注册</a></li>
+        <li title="网站建设"><a href="http://shanghai.baixing.com/wangzhanjianshe/" target="_blank" data-param="" class="one-category ">网站建设</a></li>
+        <li title="网络布线"><a href="http://shanghai.baixing.com/wangluobuxian/" target="_blank" data-param="" class="one-category ">网络布线</a></li>
+        <li title="设计策划"><a href="http://shanghai.baixing.com/sheji/" target="_blank" data-param="" class="one-category ">设计策划</a></li>
+        <li title="代运营托管"><a href="http://shanghai.baixing.com/daiyunyingtg/" target="_blank" data-param="" class="one-category ">代运营托管</a></li>
+        <li title="设备维修"><a href="http://shanghai.baixing.com/bangongweixiu/" target="_blank" data-param="" class="one-category ">设备维修</a></li>
+        <li title="设备租赁"><a href="http://shanghai.baixing.com/zulin/" target="_blank" data-param="" class="one-category ">设备租赁</a></li>
+        <li title="建筑维修"><a href="http://shanghai.baixing.com/jianzhuweixiu/" target="_blank" data-param="" class="one-category ">建筑维修</a></li>
+        <li title="货运物流"><a href="http://shanghai.baixing.com/kuaidi/" target="_blank" data-param="" class="one-category ">货运物流</a></li>
+        <li title="快递服务"><a href="http://shanghai.baixing.com/kuaidifuwu/" target="_blank" data-param="" class="one-category ">快递服务</a></li>
+        <li title="律师服务"><a href="http://shanghai.baixing.com/lvshifuwu/" target="_blank" data-param="" class="one-category ">律师服务</a></li>
+        <li title="翻译服务"><a href="http://shanghai.baixing.com/fanyifuwu/" target="_blank" data-param="" class="one-category ">翻译服务</a></li>
+        <li title="速记服务"><a href="http://shanghai.baixing.com/suji/" target="_blank" data-param="" class="one-category ">速记服务</a></li>
+        <li title="保险服务"><a href="http://shanghai.baixing.com/baoxianfuwu/" target="_blank" data-param="" class="one-category ">保险服务</a></li>
+        <li title="印刷包装"><a href="http://shanghai.baixing.com/yinshuapenghui/" target="_blank" data-param="" class="one-category ">印刷包装</a></li>
+        <li title="广告媒体"><a href="http://shanghai.baixing.com/guanggaomeiti/" target="_blank" data-param="" class="one-category ">广告媒体</a></li>
+        <li title="礼品定制"><a href="http://shanghai.baixing.com/lipinfuwu/" target="_blank" data-param="" class="one-category ">礼品定制</a></li>
+        <li title="喷绘招牌"><a href="http://shanghai.baixing.com/penhuizhaopai/" target="_blank" data-param="" class="one-category ">喷绘招牌</a></li>
+        <li title="庆典演出"><a href="http://shanghai.baixing.com/qingdian/" target="_blank" data-param="" class="one-category ">庆典演出</a></li>
+        <li title="展览展会"><a href="http://shanghai.baixing.com/zhanlanzhanhui/" target="_blank" data-param="" class="one-category ">展览展会</a></li>
+        <li title="餐饮美食"><a href="http://shanghai.baixing.com/canyinmeishi/" target="_blank" data-param="" class="one-category ">餐饮美食</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        <a href="http://shanghai.baixing.com/jiamengpd/" target="_blank" class="">招商加盟</a>
+       </div>
+       <ul class="category-ul">
+        <li title="餐饮加盟"><a href="http://shanghai.baixing.com/jiameng/m36447/" target="_blank" data-param="" class="one-category ">餐饮加盟</a></li>
+        <li title="网店加盟"><a href="http://shanghai.baixing.com/jiameng/m178287/" target="_blank" data-param="" class="one-category ">网店加盟</a></li>
+        <li title="建材加盟"><a href="http://shanghai.baixing.com/jiameng/m36472/" target="_blank" data-param="" class="one-category ">建材加盟</a></li>
+        <li title="美容保健"><a href="http://shanghai.baixing.com/jiameng/m36461/" target="_blank" data-param="" class="one-category ">美容保健</a></li>
+        <li title="微商加盟"><a href="http://shanghai.baixing.com/jiameng/m183146/" target="_blank" data-param="" class="one-category ">微商加盟</a></li>
+        <li title="快递物流"><a href="http://shanghai.baixing.com/jiameng/m178112/" target="_blank" data-param="" class="one-category ">快递物流</a></li>
+        <li title="教育培训"><a href="http://shanghai.baixing.com/jiameng/m36484/" target="_blank" data-param="" class="one-category ">教育培训</a></li>
+        <li title="产品代理"><a href="http://shanghai.baixing.com/jiameng/m36438/" target="_blank" data-param="" class="one-category ">产品代理</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        <a href="http://shanghai.baixing.com/gongyeshebei/" target="_blank" class="">工业设备</a>
+       </div>
+       <ul class="category-ul">
+        <li title="工业机械"><a href="http://shanghai.baixing.com/gongyeshebei/m36335/" target="_blank" data-param="" class="one-category ">工业机械</a></li>
+        <li title="木工设备"><a href="http://shanghai.baixing.com/gongyeshebei/m36333/" target="_blank" data-param="" class="one-category ">木工设备</a></li>
+        <li title="化工设备"><a href="http://shanghai.baixing.com/gongyeshebei/m178461/" target="_blank" data-param="" class="one-category ">化工设备</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        <a href="http://shanghai.baixing.com/wupinpifa/" target="_blank" class="">物品批发</a>
+       </div>
+       <ul class="category-ul">
+        <li title="礼品"><a href="http://shanghai.baixing.com/wupinpifa/m191072/" target="_blank" data-param="" class="one-category ">礼品</a></li>
+        <li title="服装"><a href="http://shanghai.baixing.com/wupinpifa/m191073/" target="_blank" data-param="" class="one-category ">服装</a></li>
+        <li title="化妆品"><a href="http://shanghai.baixing.com/wupinpifa/m191074/" target="_blank" data-param="" class="one-category ">化妆品</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        <a href="http://shanghai.baixing.com/nongye/" target="_blank" class="">农林牧渔</a>
+       </div>
+       <ul class="category-ul">
+        <li title="畜禽养殖"><a href="http://shanghai.baixing.com/nongye/m177772/" target="_blank" data-param="" class="one-category ">畜禽养殖</a></li>
+        <li title="动植物种苗"><a href="http://shanghai.baixing.com/nongye/m177771/" target="_blank" data-param="" class="one-category ">动植物种苗</a></li>
+        <li title="园林花卉"><a href="http://shanghai.baixing.com/nongye/m177775/" target="_blank" data-param="" class="one-category ">园林花卉</a></li>
+       </ul></li>
+     </ul>
+    </section> 
+    <section style="height: 475px" class="section-box category-ershou">
+     <div class="title">
+      <a href="http://shanghai.baixing.com/ershou/" target="_blank">二手市集</a>
+     </div>
+     <ul class="content">
+      <li class="category-group">
+       <div class="title">
+        手机数码
+       </div>
+       <ul class="category-ul">
+        <li title="二手手机"><a href="http://shanghai.baixing.com/shouji/?src=hotlink" target="_blank" data-param="src=hotlink" class="one-category hot">二手手机</a></li>
+        <li title="笔记本"><a href="http://shanghai.baixing.com/bijiben/" target="_blank" data-param="" class="one-category ">笔记本</a></li>
+        <li title="台式电脑"><a href="http://shanghai.baixing.com/diannao/" target="_blank" data-param="" class="one-category ">台式电脑</a></li>
+        <li title="二手照相机"><a href="http://shanghai.baixing.com/zhaoxiangji/" target="_blank" data-param="" class="one-category ">二手照相机</a></li>
+        <li title="数码产品"><a href="http://shanghai.baixing.com/shumachanpin/" target="_blank" data-param="" class="one-category ">数码产品</a></li>
+        <li title="手机配件"><a href="http://shanghai.baixing.com/shoujipeijian/" target="_blank" data-param="" class="one-category ">手机配件</a></li>
+        <li title="平板电脑"><a href="http://shanghai.baixing.com/pingbandiannao/" target="_blank" data-param="" class="one-category ">平板电脑</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        生活百货
+       </div>
+       <ul class="category-ul">
+        <li title="二手家具"><a href="http://shanghai.baixing.com/jiaju/?src=hotlink" target="_blank" data-param="src=hotlink" class="one-category hot">二手家具</a></li>
+        <li title="家用家电"><a href="http://shanghai.baixing.com/dianqi/" target="_blank" data-param="" class="one-category ">家用家电</a></li>
+        <li title="母婴用品"><a href="http://shanghai.baixing.com/yinger/" target="_blank" data-param="" class="one-category ">母婴用品</a></li>
+        <li title="家居日用"><a href="http://shanghai.baixing.com/riyongpin/" target="_blank" data-param="" class="one-category ">家居日用</a></li>
+        <li title="二手自行车"><a href="http://shanghai.baixing.com/ershouzixingche/" target="_blank" data-param="" class="one-category ">二手自行车</a></li>
+        <li title="文体乐器"><a href="http://shanghai.baixing.com/yundongqicai/" target="_blank" data-param="" class="one-category ">文体乐器</a></li>
+        <li title="门票卡券"><a href="http://shanghai.baixing.com/menpiao/" target="_blank" data-param="" class="one-category ">门票卡券</a></li>
+        <li title="工艺收藏"><a href="http://shanghai.baixing.com/shoucang/" target="_blank" data-param="" class="one-category ">工艺收藏</a></li>
+        <li title="奇石盆景"><a href="http://shanghai.baixing.com/qishipenjing/" target="_blank" data-param="" class="one-category ">奇石盆景</a></li>
+        <li title="虚拟物品"><a href="http://shanghai.baixing.com/xuniwupin/" target="_blank" data-param="" class="one-category ">虚拟物品</a></li>
+        <li title="商家全新"><a href="http://shanghai.baixing.com/quanxinshangjia/" target="_blank" data-param="" class="one-category ">商家全新</a></li>
+        <li title="物品回收"><a href="http://shanghai.baixing.com/wupinhuishou/?src=hotlink" target="_blank" data-param="src=hotlink" class="one-category hot">物品回收</a></li>
+        <li title="服饰箱包"><a href="http://shanghai.baixing.com/fushi/" target="_blank" data-param="" class="one-category ">服饰箱包</a></li>
+        <li title="图书音像"><a href="http://shanghai.baixing.com/yueqi/" target="_blank" data-param="" class="one-category ">图书音像</a></li>
+        <li title="食品农产"><a href="http://shanghai.baixing.com/nongchanpin/" target="_blank" data-param="" class="one-category ">食品农产</a></li>
+       </ul></li>
+      <li class="category-group">
+       <div class="title">
+        办公设备
+       </div>
+       <ul class="category-ul">
+        <li title="办公用品"><a href="http://shanghai.baixing.com/bangongyongpin/" target="_blank" data-param="" class="one-category ">办公用品</a></li>
+        <li title="办公家具"><a href="http://shanghai.baixing.com/bangongjiaju/" target="_blank" data-param="" class="one-category ">办公家具</a></li>
+        <li title="工业设备"><a href="http://shanghai.baixing.com/gongyeshebei/#home-ershou" target="_blank" data-param="" class="one-category ">工业设备</a></li>
+        <li title="设备租赁"><a href="http://shanghai.baixing.com/zulin/#home-ershou" target="_blank" data-param="" class="one-category ">设备租赁</a></li>
+       </ul></li>
+     </ul>
+    </section> 
+   </section> 
+  </div> 
+  <div class="bottom-three-banner">
+   <a target="_blank" href="http://www.baixing.com/rev/lottery?activity=lottery_activity201809" data-atype="b-x-a-d-a" class="a_d_s_hidden_link adsense-image-link"><img class="a_d_s_img " src="__STATICS__/1e84249afcb370a6937b457336b7b78d.png" /></a> 
+   <a target="_blank" href="http://www.baixing.com/a/quanwangtong?src=haina_topbar" data-atype="b-x-a-d-a" class="a_d_s_hidden_link adsense-image-link"><img class="a_d_s_img " src="__STATICS__/a5490b5aaf1257dcf567c387dd75723c.png" /></a> 
+   <a target="_blank" href="http://www.baixing.com/a/quanwangtong?src=haina_topbar" data-atype="b-x-a-d-a" class="a_d_s_hidden_link adsense-image-link"><img class="a_d_s_img " src="__STATICS__/a5490b5aaf1257dcf567c387dd75723c(1).png" /></a> 
+  </div> 
+  <section class="third-links container"> 
+   <ul class="link-ul">
+    <li class="link-block">
+     <div class="big-title">
+      便民服务
+     </div> <a href="http://ditu.baidu.com/?s=s%26wd%3D%E4%B8%8A%E6%B5%B7" target="_blank" rel="nofollow"> 百度地图 </a> <a href="http://tieba.baidu.com/f?ie=utf-8&amp;kw=%E4%B8%8A%E6%B5%B7" target="_blank" rel="nofollow"> 百度贴吧 </a> <a href="http://news.baidu.com/ns?word=%E4%B8%8A%E6%B5%B7" target="_blank" rel="nofollow"> 百度新闻 </a> <a href="http://www.zonghengche.com/ad/weizhang/index.php?m=017809" target="_blank" rel="nofollow"> 违章查询 </a> <a href="http://www.haodai.com/calc/shfcs/?ref=bxfsjsq" target="_blank" rel="nofollow"> 房产税 </a> <a href="http://www.kuaidi.com/" target="_blank" rel="nofollow"> 快递查询 </a> </li>
+    <li class="link-block">
+     <div class="big-title">
+      休闲娱乐
+     </div> <a href="http://www.baixing.com/a/qmzb" target="_blank" rel="nofollow"> 美女视频 </a> <a href="http://www.baixing.com/a/v6cn" target="_blank" rel="nofollow"> 视频交友 </a> <a href="http://zhidao.baixing.com/" target="_blank" rel="nofollow"> 百姓知道 </a> </li>
+    <li class="link-block">
+     <div class="big-title">
+      招商
+     </div> <a href="http://www.baixing.com/jiamengpd/" target="_blank" rel="nofollow"> 招商加盟 </a> </li>
+    <li class="link-block">
+     <div class="big-title">
+      百姓健康
+     </div> <a href="http://yyk.baixing.com/shanghai/" target="_blank" class="li">就医助手</a> <a href="http://yyk.baixing.com/shanghai/hospitals/c_yuyue/" target="_blank" class="li">快速挂号</a> <a href="http://yyk.baixing.com/shanghai/hospitals/" target="_blank" class="li">医院信息</a> <a href="http://yyk.baixing.com/shanghai/doctors/" target="_blank" class="li">医生信息</a></li>
+   </ul> 
+   <div class="baixing-notices section-box">
+    <div class="title normal">
+     百姓动态
+     <span class="more"> <a href="http://www.baixing.com/mkt/intro?target=report" target="_blank">更多</a></span>
+    </div> 
+    <div class="content">
+     <div id="J_swiperNews" class="swiper-container news-container swiper-container-vertical"> 
+      <ul class="swiper-wrapper" style="transform: translate3d(0px, -325px, 0px); transition-duration: 0ms;"> 
+       <li class="one-news swiper-slide swiper-slide-duplicate" data-swiper-slide-index="7" style="height: 25px;"> <a href="https://tech.china.com/article/20180927/kejiyuan0718196467.html" target="_blank">百姓网获首个网络安全感满意度调查“调查活动支持奖”</a></li> 
+       <li class="one-news swiper-slide swiper-slide-duplicate" data-swiper-slide-index="8" style="height: 25px;"> <a href="http://biz.ifeng.com/a/20180925/45180255_0.shtml" target="_blank">百姓网宠咖秀亮相网易科技峰会 小程序将进入平台红利期</a></li> 
+       <li class="one-news swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="9" style="height: 25px;"> <a href="https://www.toutiao.com/i6603486574304821763/" target="_blank">百姓网：十一中秋兼职招聘热 七成蓝领加班不回家</a> </li>
+       <li class="one-news swiper-slide swiper-slide-duplicate-active" data-swiper-slide-index="0" style="height: 25px;"><a href="http://finance.ifeng.com/a/20181029/16547462_0.shtml" target="_blank">百姓网：万圣节“搞事情”成惯例 服装道具租赁火热</a></li>
+       <li class="one-news swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="1" style="height: 25px;"><a href="https://www.sohu.com/a/271437817_100274366" target="_blank">百姓网：万圣节场地道具租赁火热 为博出彩各出奇招</a></li>
+       <li class="one-news swiper-slide" data-swiper-slide-index="2" style="height: 25px;"><a href="http://biz.ifeng.com/a/20181024/45198822_0.shtml" target="_blank">1024节，百姓网带你走进真实的程序员生活</a></li>
+       <li class="one-news swiper-slide" data-swiper-slide-index="3" style="height: 25px;"><a href="https://www.toutiao.com/i6613153902843920900/" target="_blank">百姓网重阳节调查：农民工持续老龄化 回流本地就业增多</a></li>
+       <li class="one-news swiper-slide" data-swiper-slide-index="4" style="height: 25px;"><a href="https://finance.china.com/cydt/20000860/20181015/25283156.html" target="_blank">百姓网宠咖秀：瞄准“它”经济 打造“宠物版小红书”</a></li>
+       <li class="one-news swiper-slide" data-swiper-slide-index="5" style="height: 25px;"><a href="http://jiaju.sina.com.cn/news/20180418/6392193432785584926.shtml" target="_blank">百姓网荣膺“2018年上海市公共互联网网络安全工作先进个人”</a></li>
+       <li class="one-news swiper-slide" data-swiper-slide-index="6" style="height: 25px;"><a href="http://biz.ifeng.com/a/20180929/45184874_0.shtml" target="_blank">百姓网：十一出游热 租车代驾、保洁宠物“各取所需”</a></li>
+       <li class="one-news swiper-slide" data-swiper-slide-index="7" style="height: 25px;"><a href="https://tech.china.com/article/20180927/kejiyuan0718196467.html" target="_blank">百姓网获首个网络安全感满意度调查“调查活动支持奖”</a></li>
+       <li class="one-news swiper-slide" data-swiper-slide-index="8" style="height: 25px;"><a href="http://biz.ifeng.com/a/20180925/45180255_0.shtml" target="_blank">百姓网宠咖秀亮相网易科技峰会 小程序将进入平台红利期</a></li>
+       <li class="one-news swiper-slide swiper-slide-prev" data-swiper-slide-index="9" style="height: 25px;"><a href="https://www.toutiao.com/i6603486574304821763/" target="_blank">百姓网：十一中秋兼职招聘热 七成蓝领加班不回家</a></li>
+       <li class="one-news swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="0" style="height: 25px;"><a href="http://finance.ifeng.com/a/20181029/16547462_0.shtml" target="_blank">百姓网：万圣节“搞事情”成惯例 服装道具租赁火热</a></li>
+       <li class="one-news swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="1" style="height: 25px;"><a href="https://www.sohu.com/a/271437817_100274366" target="_blank">百姓网：万圣节场地道具租赁火热 为博出彩各出奇招</a></li>
+       <li class="one-news swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="height: 25px;"><a href="http://biz.ifeng.com/a/20181024/45198822_0.shtml" target="_blank">1024节，百姓网带你走进真实的程序员生活</a></li>
+      </ul>
+     </div>
+    </div>
+   </div>
+  </section> 
+  <div class="bottom-banner full-banner">
+   11
+  </div>  
+ </body>
+</html>
