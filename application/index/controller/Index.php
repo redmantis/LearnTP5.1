@@ -11,7 +11,7 @@ class Index extends Base {
             if (!empty($data['user_name'])) {
                 $admin = new \app\common\model\admin\Admin();
                 $data['addtime'] = time();
-                $admin->save($data);
+//                $admin->save($data);
                 $this->success("数据添加成功");
             }else{
                 $this->error("用户名不能为空","index");
