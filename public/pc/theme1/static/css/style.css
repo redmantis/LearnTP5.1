@@ -54,7 +54,7 @@ table.default-table thead tr{
     border-bottom: 1px solid #333;
 }
 
-table.default-table thead th{   
+table.default-table tbody th,table.default-table thead th{   
     border-right: 1px solid #333;
 }
 
@@ -76,7 +76,7 @@ table.default-table tbody tr th,table.default-table tbody tr td{
     text-align: left;
     /* border: 1px solid #ddd; */
     border:solid #333; 
-    border-width:0px 1px 1px 0px; 
+    border-width:0px 1px 1px 0px;  
 }
 table.default-table tbody tr th{
     font-weight: bold;
