@@ -20,15 +20,29 @@ class Route extends Base {
         return $this->fetch();
     }
 
-    public function hello($name = 'ThinkPHP5') {
-        return 'hello,你好' . $name;
+    public function hello($lng='',$name) {
+        if(empty($lng)){
+            $lng="cn";
+        }
+        return "你好,{$name}!这是 hello 方法,当前版本是：" . $lng;
     }
     
-    public function test() {   
+    public function show($lng = 'cn') {
+        $this->assign("lng", $lng);
+        $this->assign("action", "show");
         return $this->fetch();
     }
-
-    public function _empty($name) {
-        return 'hello:' . $name;
+    
+    public function show2($lng = 'cn',$name='show2') {
+        $this->assign("lng", $lng);
+        $this->assign("action", "show2");
+        $this->assign("name", $name);
+        return $this->fetch();
+    }
+    
+    public function full($full = 'cn') {
+        $this->assign("lng", $full);
+        $this->assign("action", "full");
+        return $this->fetch("show");
     }
 }

@@ -1,0 +1,46 @@
+
+<table class="default-table">
+    <thead>
+        <tr> <th>路由</th>
+            <th>URL方法</th>
+            <th>链接</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="{:url('route/index')}">返回路由实验首页</a></td>
+            <td>Route::get('[:lng]/route/index', 'route/index');</td>
+            <td>url('route/index')</td>            
+        </tr>
+        <tr>
+            <td><a href="{:url('route/show', ['lng'=>'ttt'])}">{:url('route/show', ['lng'=>'ttt'])}</a></td>
+            <td>Route::get('[:lng]/route/show', 'route/show');</td>
+            <td>url('route/show', ['lng'=>'ttt'])</td>
+        </tr>
+        <tr>
+            <td><a href="{:url('route/show', ['lng'=>''])}">{:url('route/show', ['lng'=>''])}</a></td>
+            <td>Route::get('[:lng]/route/show', 'route/show');</td>
+            <td>url('route/show', ['lng'=>''])</td>
+        </tr>
+        <tr>
+            <td><a href="{:url('route/show2', ['lng'=>'en','name'=>'name'])}">{:url('route/show2', ['lng'=>'en','name'=>'name'])}</a></td>
+            <td>Route::get('[:lng]/route/:name', 'route/show2');</td>
+            <td>url('route/show2', ['lng'=>'en','name'=>'name'])</td>
+        </tr>
+         <tr>
+            <td><a href="{:url('route/full', ['full'=>'en'])}">{:url('route/full', ['full'=>'en'])}</a></td>
+            <td>Route::get('full/:full$', 'route/full');</td>
+            <td>url('route/full', ['full'=>'en'])</td>
+        </tr>
+         <tr>
+            <td><a href="{:url('route/full', ['full'=>'en','name'=>'name'])}">{:url('route/full', ['full'=>'en','name'=>'name'])}</a></td>
+            <td>不匹配--Route::get('full/:full$', 'route/full');</td>
+            <td>url('route/full', ['full'=>'en','name'=>'name'])</td>
+        </tr>
+        <tr>
+            <td><a href="{:url('route_mark', ['name'=>'markname'])}">{:url('route_mark', ['name'=>'markname'])}</a></td>
+            <td>Route::get('mark/:name','route/show2')->name('route_mark');</td>
+            <td>url('route_mark', ['name'=>'markname'])</td>
+        </tr>
+    </tbody>
+</table>

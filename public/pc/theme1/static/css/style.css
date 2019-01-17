@@ -17,6 +17,10 @@ body{
     color: #333;
 }
 
+h3{margin-top: 2em;}
+
+h3>em{ font-size: .7em;font-style: normal;color: gray;}
+
 .formpanel{
     width: 400px;
     padding: 20px;
@@ -30,3 +34,59 @@ body{
     border-bottom: solid 1px #666;
     padding: 10px;
 }
+
+/*table start*/
+table.default-table{
+    /* -moz-border-radius: 5px;
+    -webkit-border-radius:5px;
+    border-radius:5px; */
+    width: 100%;
+    border:solid #333; 
+    border-width:1px 0px 0px 1px;
+    font-size: #333;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table.default-table thead tr{
+    height: 30px;
+    line-height: 30px;
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #333;
+}
+
+table.default-table thead th{   
+    border-right: 1px solid #333;
+}
+
+table.default-table tbody tr{
+    height: 20px;
+    line-height: 20px;
+}
+table.default-table tbody tr.odd{
+    background-color: #fff;
+}
+table.default-table tbody tr.even{
+    background-color: #F5F5F5;
+}
+table.default-table tbody tr:hover{
+    background-color: #eee;
+}
+table.default-table tbody tr th,table.default-table tbody tr td{
+    padding:3px 5px;
+    text-align: left;
+    /* border: 1px solid #ddd; */
+    border:solid #333; 
+    border-width:0px 1px 1px 0px; 
+}
+table.default-table tbody tr th{
+    font-weight: bold;
+    text-align: center;
+}
+
+table.default-table tbody tr td.tac{
+    text-align: center;
+}
+table.default-table tbody tr td a:hover{
+    color:#0080c0;
+}
+/*table end*/

@@ -1,5 +1,3 @@
-<?php
-
 /* 
  +----------------------------------------------------------------------
  | SunkenFish [ LISTEN TO THE SHOCKING THUNDERCLAP IN THE QUIET AND NOISELESS PLACE]
@@ -9,16 +7,6 @@
  | Author: 黑鱼� <feiyufly001@gmail.com>
  +----------------------------------------------------------------------
  */
-namespace app\index\controller;
 
-use think\Controller;
 
-class Base extends Controller {
-
-    public function initialize() {
-        parent::initialize();
-        $this->assign('theme', '/pc/theme1/static');
-        $this->assign('cssversion', time());
-    }
-
-}
+console.log("Hello World");
