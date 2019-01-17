@@ -41,6 +41,24 @@
             <td><a href="{:url('route_mark', ['name'=>'markname'])}">{:url('route_mark', ['name'=>'markname'])}</a></td>
             <td>Route::get('mark/:name','route/show2')->name('route_mark');</td>
             <td>url('route_mark', ['name'=>'markname'])</td>
+        </tr>      
+    </tbody>
+     <tbody>
+        <tr> <th>路由分组实验</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </tbody>
+    <tbody>   
+        <tr>
+            <td><a href="{:url('group/gindex')}">{:url('group/index')}</a></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a href="{:url('group/gindex', ['id'=>12])}">{:url('group/index', ['id'=>12])}</a></td>
+            <td></td>
+            <td></td>
         </tr>
     </tbody>
 </table>
