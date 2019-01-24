@@ -142,5 +142,9 @@ return [
     'show_error_msg'         => false,
     // 异常处理handle类 留空使用 \think\exception\Handle
     'exception_handle'       => '',
+    // 是否开启路由
+    'url_route_on'=> true,
+    // 是否强制使用路由
+    'url_route_must'=> true,
 
 ];
