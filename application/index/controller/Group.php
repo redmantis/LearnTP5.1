@@ -23,19 +23,23 @@ use QcloudImage\CIClient;
  */
 class Group extends Base {
  
-    public function index($id = '') { 
+    public function index() {
+        $this->assign("curent_action", "index");
         return $this->fetch();
     }
 
     public function read() {
+        $this->assign("curent_action", "read");
         return $this->fetch("index");
     }
 
     public function write() {
+        $this->assign("curent_action", "write");
         return $this->fetch("index");
     }
 
-    public function del() {        
+    public function delete() {
+        $this->assign("curent_action", "delete");
         return $this->fetch("index");
     }
 
