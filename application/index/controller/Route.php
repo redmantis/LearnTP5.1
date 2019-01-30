@@ -30,6 +30,7 @@ class Route extends Base {
     public function show($lng = 'cn') {
         $this->assign("lng", $lng);
         $this->assign("action", "show");
+        $this->assign("name", "");
         return $this->fetch();
     }
     
@@ -37,12 +38,13 @@ class Route extends Base {
         $this->assign("lng", $lng);
         $this->assign("action", "show2");
         $this->assign("name", $name);
-        return $this->fetch();
+        return $this->fetch("show");
     }
     
-    public function full($full = 'cn') {
+    public function full($full = 'cn',$name='') {
         $this->assign("lng", $full);
         $this->assign("action", "full");
+        $this->assign("name", $name);
         return $this->fetch("show");
     }
 }
