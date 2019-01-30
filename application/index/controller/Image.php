@@ -12,7 +12,6 @@
 
 namespace app\index\controller;
 use think\facade\App;
-use think\Controller;
 use QcloudImage\CIClient;
 
 /**
@@ -23,9 +22,9 @@ use QcloudImage\CIClient;
 class Image extends Base {
     public function index() {
         require_once App::getRootPath() . 'extend/QcloudImage/autoload.php';
-        $appid = '1253114713';
-        $secretId = 'AKIDvlZItK7rumTzKVqK7pQtCLKCuRuXNrJa';
-        $secretKey = 'GMH19B3vdAVggWBh4GI9883ypW2NH6lG';
+        $appid = 'YOUR_APPID';
+        $secretId = 'YOUR_SECRETID';
+        $secretKey = 'YOUR_SECRETKEY';
         $bucket = 'YOUR_BUCKET';
         $client = new CIClient($appid, $secretId, $secretKey, $bucket);
 
@@ -36,21 +35,23 @@ class Image extends Base {
         $client->setTimeout(30);
 
         if ($this->request->isPost()) {
-            $data = input('post.');
+            $data = input('post.');         
             $nd = [];
-//            if ($_FILES('file')) {
-//                $f = file_get_contens($_FILES['file']['tmp_name']);
-//                $nd['buffer'] = $f;
-//            }
-            if ($data['url']) {
+            if ($_FILES['file']['tmp_name']) {//本地图片
+                $f = file_get_contents($_FILES['file']['tmp_name']);
+                $nd['buffer'] = $f;
+            }
+        
+            if ($data['url']) {//网络图片
                 $nd['url'] = $data['url'];
             }
 
-//            $rs = $client->tagDetect(array('url' => 'http://open.youtu.qq.com./static/img/imag_02.f43527f.jpg'));
             $rs = $client->tagDetect($nd);
             $res = json_decode($rs, true);
-            foreach ($res['tags'] as $v) {
-                echo $v['tag_name'] . "<br />";
+            if (isset($res['tags'])) {
+                foreach ($res['tags'] as $v) {
+                    echo $v['tag_name'] . "<br />";
+                }
             }
         }
         return $this->fetch();

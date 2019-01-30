@@ -10,13 +10,15 @@
 -->
 <html>
     <head>
-        <title>第六天 第三方类库引用（腾迅云智能图像应用）</title>
+        <title>第七天 第三方类库引用（腾迅云智能图像应用）</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="{$theme}/css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="{$theme}/css/style.css?v={$cssversion}" rel="stylesheet" type="text/css"/>
+        <link href="{$theme}/css/prism.css" rel="stylesheet" type="text/css"/>
+        <script src="{$theme}/js/prism.js" type="text/javascript"></script>
     </head>
     <body>
-        <h3>第六天 第三方类库引用（腾迅云智能图像应用）</h3>
+        <h3>第七天 第三方类库引用（腾迅云智能图像应用）</h3>
         <div class="formpanel">
             <h3>腾迅云上许多资源都有免费使用额度，足以满足一般项目的需求。</h3>
             <p>腾讯云图片标签由世界一流水平的深度识别引擎打造，基于社交生活场景的海量图像数据挖掘，覆盖 95% 的社交图片，支持社交领域的热词标 200 多种， 涵盖人物、风景、人造物、建筑、动植物、食物等 9 个大类，包含日常生活照片的各个信息维度，能准确读懂图片内容信息并实现智能归类，帮助更好地管理照片。<a href="https://cloud.tencent.com/act/event/aiAllFree#mod-hot5" target="_blank">(腾迅云)AI 服务全面免费接入</a></p>
@@ -26,5 +28,56 @@
                 <div><input type="submit" value="提交数据" /></div>
             </form>
         </div>
+        
+        <h3>第三方类库引用方法</h3>
+        <p>以《腾讯云图片标签》为例，<a href="https://cloud.tencent.com/product/image-tag/developer" target="_blank">文档与SDK下载</a>，下载相应SDK后放入extend目录 （也可以是其它目录）</p>
+        <p>创建控制器 Image.php</p>
+        <pre><code class="language-php">namespace app\index\controller;
+use think\facade\App;
+use QcloudImage\CIClient;
+
+/**
+ * Description of Image
+ *
+ * @author RDM
+ */
+class Image extends Base {
+    public function index() {
+        require_once App::getRootPath() . 'extend/QcloudImage/autoload.php';//引用第三方类库
+        $appid = 'YOUR_APPID';
+        $secretId = 'YOUR_SECRETID';
+        $secretKey = 'YOUR_SECRETKEY';
+        $bucket = 'YOUR_BUCKET';
+        $client = new CIClient($appid, $secretId, $secretKey, $bucket);//实例化第三方类库
+
+        //推荐使用https
+        $client->useHttps();
+
+        // 设置超时
+        $client->setTimeout(30);
+
+        if ($this->request->isPost()) {
+            $data = input('post.');         
+            $nd = [];
+            if ($_FILES['file']['tmp_name']) {//本地图片
+                $f = file_get_contents($_FILES['file']['tmp_name']);
+                $nd['buffer'] = $f;
+            }
+        
+            if ($data['url']) {//网络图片
+                $nd['url'] = $data['url'];
+            }
+
+            $rs = $client->tagDetect($nd);
+            $res = json_decode($rs, true);
+            if (isset($res['tags'])) {
+                foreach ($res['tags'] as $v) {
+                    echo $v['tag_name'] . "<br />";
+                }
+            }
+        }
+        return $this->fetch();
+    }
+}</code></pre>
     </body>
 </html>
