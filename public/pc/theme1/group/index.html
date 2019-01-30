@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>第六天 ThinkPHP5路由实验（二）</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="{$theme}/css/style.css?v={$cssversion}" rel="stylesheet" type="text/css"/>
+        <link href="{$theme}/css/prism.css" rel="stylesheet" type="text/css"/>
+        <script src="{$theme}/js/prism.js" type="text/javascript"></script>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <h3>第六天 ThinkPHP5路由实验（二）<em>路由分组实验</em></h3>  
+        
+         {include file="route/nav" /} 
+        <div id="codeheightlight">
+            <p>路由分组功能允许把相同前缀的路由定义合并分组，这样可以简化路由定义，并且提高路由匹配的效率，不必每次都去遍历完整的路由规则</p>
+            <h2>当前方法：{$curent_action}</h2>
+            
+            <h3>使用Route类的group方法进行注册，给分组路由定义一些公用的路由设置参数，使用规范如下</h3>
+            <pre><code class="language-php">Route::group('分组名（字符串）或者分组路由参数（数组）','分组路由规则（数组或者闭包）');</code></pre>
+            
+            <pre><code class="language-php">Route::group('group', function () {
+    Route::get('read/:id', 'group/read');
+    Route::get('write/:id', 'group/write');
+    Route::get('del/:id', 'group/del');
+    Route::get('index/:id', 'group/index');
+})->ext('html')->pattern(['id' => '\d+']);</code></pre>
+            <hr>
+            <h3>使用前缀 prefix</h3>
+            <pre><code class="language-php">Route::group('group', function () {
+    Route::get('read/:id', 'read');
+    Route::get('write/:id', 'write');
+    Route::get('del/:id', 'del');
+    Route::get('index/:id', 'index');
+})->prefix('group/')->ext('html')->pattern(['id' => '\d+']);</code></pre>
+            <p>使用前缀虽然可以简化路由书写，但在使用时也产生一些局限，比如路由到 group/index应需要写成</p>
+            <pre><code class="language-php">url('index')</code></pre>
+            <p>而不是之前的</p>
+            <pre><code class="language-php">url('group/index')</code></pre>
+            <p>很明显，冲突已经在所难免，解决的办法是使用别名</p>
+            <pre><code class="language-php">Route::group('group', function () {
+    Route::get('read/:id', 'read')->name('group_read');;
+    Route::get('write/:id', 'write')->name('group_write');;
+    Route::get('del/:id', 'del')->name('group_del');;
+    Route::get('index/:id', 'index')->name('group_index');;
+})->prefix('group/')->ext('html')->pattern(['id' => '\d+']);</code></pre>
+            <p>但这样写，说好的简化去哪里了……，当然，使用别名还是有其他好处的。</p>
+            <hr>
+            <h3>可选定义:<em>支持对路由参数的可选定义</em></h3>
+            <p>变量用[ ]包含起来后就表示该变量是路由匹配的可选变量。</p>
+            <pre  class="line-numbers"><code class="language-php">Route::get('[:lng]/route/show', 'route/show');//上面的两条路由定义可以简化为一条</code></pre>
+            
+            <h3>完全匹配:<em>支持对路由参数的可选定义</em></h3>
+            <p>规则匹配检测的时候默认只是对URL从头开始匹配，只要URL地址包含了定义的路由规则就会匹配成功，如果希望URL进行完全匹配，可以在路由表达式最后使用$符号。</p>
+            <pre  class="line-numbers"><code class="language-php">Route::get('full/:full$', 'route/full');//只有完全匹配才执行对应方法</code></pre>
+            
+            <h3>路由标识:<em>路由参数的可选定义</em></h3>         
+            <pre  class="line-numbers"><code class="language-php">Route::get('mark/:name','route/show2')->name('route_mark');//路由标识 需要确保唯一性</code></pre>
+           
+        </div>
+    </body>    
+</html>
