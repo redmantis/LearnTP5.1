@@ -12,10 +12,36 @@
         </style>
     </head>
     <body>
-        <h3>第五天 ThinkPHP5路由实验--演示</h3>   
-        {include file="route/nav" /} 
+        <h3>第五天 ThinkPHP5路由实验</h3>  
+        
+         {include file="route/nav" /} 
         <div id="codeheightlight">
-          现在我执行的是“{$action}”方法，获得参数lng= “{$lng}”
+            <p> route目录下的任何路由定义文件都是有效的，默认的路由定义文件是route.php，但你完全可以更改文件名，或者添加多个路由定义文件（你可以进行模块定义区分，但最终都会一起加载）。
+            </p>
+            <p>最重要的一条规则：注册多个路由规则后，系统会依次遍历注册过的满足请求类型的路由规则，一旦匹配到正确的路由规则后则开始执行最终的调度方法，后续规则就不再检测。
+            </p>
+            <h2>当前方法：{$action}  传入参数>name：{$name}、lng：{$lng}</h2>
+            
+            <h3>最基础的路由定义方法是:</h3>
+            <pre><code class="language-php">Route::rule('路由表达式','路由地址','请求类型');//除了路由表达式和路由地址是必须的外，其它参数均为可选。</code></pre>
+            
+            <pre><code class="language-php">//当两条规则同时满足匹配条件时，精确规则应当放在前面以获得优先处理
+Route::get('route/show', 'route/show');//静态地址路由
+Route::get(':lng/route/show', 'route/show');//有些场景中，特定参数前置会带来更好的用户体验
+Route::get('route/:name', 'route/hello');
+Route::get(':lng/route/:name', 'route/hello');</code></pre>
+            <hr>            
+            <h3>可选定义:<em>支持对路由参数的可选定义</em></h3>
+            <p>变量用[ ]包含起来后就表示该变量是路由匹配的可选变量。</p>
+            <pre  class="line-numbers"><code class="language-php">Route::get('[:lng]/route/show', 'route/show');//上面的两条路由定义可以简化为一条</code></pre>
+            
+            <h3>完全匹配:<em>支持对路由参数的可选定义</em></h3>
+            <p>规则匹配检测的时候默认只是对URL从头开始匹配，只要URL地址包含了定义的路由规则就会匹配成功，如果希望URL进行完全匹配，可以在路由表达式最后使用$符号。</p>
+            <pre  class="line-numbers"><code class="language-php">Route::get('full/:full$', 'route/full');//只有完全匹配才执行对应方法</code></pre>
+            
+            <h3>路由标识:<em>路由参数的可选定义</em></h3>         
+            <pre  class="line-numbers"><code class="language-php">Route::get('mark/:name','route/show2')->name('route_mark');//路由标识 需要确保唯一性</code></pre>
+           
         </div>
     </body>    
 </html>
